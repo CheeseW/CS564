@@ -6,7 +6,9 @@
 //  UW Campus ID: Add stuff here ..
 //  enamil: Add stuff here ..
 
-
+/*
+ * @mainpage Homework1 - Word Locator in C++
+ */
 
 /**
  * @file wl.cpp
