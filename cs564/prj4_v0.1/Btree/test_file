@@ -1,0 +1,4792 @@
+leaf size:4 non-leaf size:5
+Extracted : 0
+Extracted : 1
+Extracted : 2
+Extracted : 3
+Extracted : 4
+Extracted : 5
+Extracted : 6
+Extracted : 7
+Extracted : 8
+Extracted : 9
+Extracted : 10
+Extracted : 11
+Extracted : 12
+Extracted : 13
+Extracted : 14
+Extracted : 15
+Extracted : 16
+Extracted : 17
+Extracted : 18
+Extracted : 19
+Read all records
+--------------------
+createRelationRandom
+Create a B+ Tree index on the integer field
+key = 4383 inserted
+show leaf node after key insertion
+4383 
+
+key = 306 inserted
+show leaf node after key insertion
+306 4383 
+
+key = 723 inserted
+show leaf node after key insertion
+306 723 4383 
+
+key = 1314 inserted
+show leaf node after key insertion
+306 723 1314 4383 
+
+key = 245 inserted
+show data in the leaf node before split
+key = 306 key = 723 key = 1314 key = 4383 
+
+show data in the leaf node after split in page 1
+key = 245 key = 306 
+
+show data in the leaf node after split in page 2
+key = 723 key = 1314 key = 4383 
+
+in leaf node feedbackTuple.newPid = 3
+key = 2995 inserted
+show leaf node after key insertion
+723 1314 2995 4383 
+
+key = 286 inserted
+show leaf node after key insertion
+245 286 306 
+
+key = 3390 inserted
+show data in the leaf node before split
+key = 723 key = 1314 key = 2995 key = 4383 
+
+show data in the leaf node after split in page 1
+key = 723 key = 1314 
+
+show data in the leaf node after split in page 2
+key = 2995 key = 3390 key = 4383 
+
+in leaf node feedbackTuple.newPid = 5
+insert pageNo = 5, key = 2995
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 723, Pid = 3
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 723, x = 1, Pid = 3, key = 2995, Pid = 5
+
+key = 2601 inserted
+show leaf node after key insertion
+723 1314 2601 
+
+key = 1634 inserted
+show leaf node after key insertion
+723 1314 1634 2601 
+
+key = 1872 inserted
+show data in the leaf node before split
+key = 723 key = 1314 key = 1634 key = 2601 
+
+show data in the leaf node after split in page 1
+key = 723 key = 1314 
+
+show data in the leaf node after split in page 2
+key = 1634 key = 1872 key = 2601 
+
+in leaf node feedbackTuple.newPid = 6
+insert pageNo = 6, key = 1634
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 723, x = 1, Pid = 3, key = 2995, Pid = 5
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 723, x = 1, Pid = 3, key = 1634, x = 2, Pid = 6, key = 2995, Pid = 5
+
+key = 2650 inserted
+show leaf node after key insertion
+1634 1872 2601 2650 
+
+key = 3290 inserted
+show leaf node after key insertion
+2995 3290 3390 4383 
+
+key = 4073 inserted
+show data in the leaf node before split
+key = 2995 key = 3290 key = 3390 key = 4383 
+
+show data in the leaf node after split in page 1
+key = 2995 key = 3290 
+
+show data in the leaf node after split in page 2
+key = 3390 key = 4073 key = 4383 
+
+in leaf node feedbackTuple.newPid = 7
+insert pageNo = 7, key = 3390
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 723, x = 1, Pid = 3, key = 1634, x = 2, Pid = 6, key = 2995, Pid = 5
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 723, x = 1, Pid = 3, key = 1634, x = 2, Pid = 6, key = 2995, x = 3, Pid = 5, key = 3390, Pid = 7
+
+key = 4541 inserted
+show leaf node after key insertion
+3390 4073 4383 4541 
+
+key = 4216 inserted
+show data in the leaf node before split
+key = 3390 key = 4073 key = 4383 key = 4541 
+
+show data in the leaf node after split in page 1
+key = 3390 key = 4073 
+
+show data in the leaf node after split in page 2
+key = 4216 key = 4383 key = 4541 
+
+in leaf node feedbackTuple.newPid = 8
+insert pageNo = 8, key = 4216
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 723, x = 1, Pid = 3, key = 1634, x = 2, Pid = 6, key = 2995, x = 3, Pid = 5, key = 3390, Pid = 7
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 723, x = 1, Pid = 3, key = 1634, x = 2, Pid = 6, key = 2995, x = 3, Pid = 5, key = 3390, x = 4, Pid = 7, key = 4216, Pid = 8
+
+key = 3132 inserted
+show leaf node after key insertion
+2995 3132 3290 
+
+key = 3585 inserted
+show leaf node after key insertion
+3390 3585 4073 
+
+key = 2838 inserted
+show data in the leaf node before split
+key = 1634 key = 1872 key = 2601 key = 2650 
+
+show data in the leaf node after split in page 1
+key = 1634 key = 1872 
+
+show data in the leaf node after split in page 2
+key = 2601 key = 2650 key = 2838 
+
+in leaf node feedbackTuple.newPid = 9
+insert split pageNo = 9, key = 2601
+non-leaf node before insert split, level = 1
+x = 0, Pid = 2, key = 723, x = 1, Pid = 3, key = 1634, x = 2, Pid = 6, key = 2995, x = 3, Pid = 5, key = 3390, x = 4, Pid = 7, key = 4216, Pid = 8
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 2, key = 723, x = 1, Pid = 3, key = 1634, x = 2, Pid = 6, key = 2601, Pid = 9
+
+non-leaf node (new) after insert split
+x = 0, Pid = 5, key = 3390, x = 1, Pid = 7, key = 4216, Pid = 8
+in non-leaf node feedbackTuple.newPid = 10
+
+key = 2751 inserted
+show leaf node after key insertion
+2601 2650 2751 2838 
+
+key = 791 inserted
+show leaf node after key insertion
+723 791 1314 
+
+key = 307 inserted
+show leaf node after key insertion
+245 286 306 307 
+
+key = 4967 inserted
+show leaf node after key insertion
+4216 4383 4541 4967 
+
+key = 2130 inserted
+show leaf node after key insertion
+1634 1872 2130 
+
+key = 3590 inserted
+show leaf node after key insertion
+3390 3585 3590 4073 
+
+key = 3255 inserted
+show leaf node after key insertion
+2995 3132 3255 3290 
+
+key = 4772 inserted
+show data in the leaf node before split
+key = 4216 key = 4383 key = 4541 key = 4967 
+
+show data in the leaf node after split in page 1
+key = 4216 key = 4383 
+
+show data in the leaf node after split in page 2
+key = 4541 key = 4772 key = 4967 
+
+in leaf node feedbackTuple.newPid = 12
+insert pageNo = 12, key = 4541
+non-leaf node before insert, level = 1
+x = 0, Pid = 5, key = 3390, x = 1, Pid = 7, key = 4216, Pid = 8
+
+non-leaf node after insert
+x = 0, Pid = 5, key = 3390, x = 1, Pid = 7, key = 4216, x = 2, Pid = 8, key = 4541, Pid = 12
+
+key = 3745 inserted
+show data in the leaf node before split
+key = 3390 key = 3585 key = 3590 key = 4073 
+
+show data in the leaf node after split in page 1
+key = 3390 key = 3585 
+
+show data in the leaf node after split in page 2
+key = 3590 key = 3745 key = 4073 
+
+in leaf node feedbackTuple.newPid = 13
+insert pageNo = 13, key = 3590
+non-leaf node before insert, level = 1
+x = 0, Pid = 5, key = 3390, x = 1, Pid = 7, key = 4216, x = 2, Pid = 8, key = 4541, Pid = 12
+
+non-leaf node after insert
+x = 0, Pid = 5, key = 3390, x = 1, Pid = 7, key = 3590, x = 2, Pid = 13, key = 4216, x = 3, Pid = 8, key = 4541, Pid = 12
+
+key = 4667 inserted
+show leaf node after key insertion
+4541 4667 4772 4967 
+
+key = 2458 inserted
+show leaf node after key insertion
+1634 1872 2130 2458 
+
+key = 2889 inserted
+show data in the leaf node before split
+key = 2601 key = 2650 key = 2751 key = 2838 
+
+show data in the leaf node after split in page 1
+key = 2601 key = 2650 
+
+show data in the leaf node after split in page 2
+key = 2751 key = 2838 key = 2889 
+
+in leaf node feedbackTuple.newPid = 14
+insert pageNo = 14, key = 2751
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 723, x = 1, Pid = 3, key = 1634, x = 2, Pid = 6, key = 2601, Pid = 9
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 723, x = 1, Pid = 3, key = 1634, x = 2, Pid = 6, key = 2601, x = 3, Pid = 9, key = 2751, Pid = 14
+
+key = 1766 inserted
+show data in the leaf node before split
+key = 1634 key = 1872 key = 2130 key = 2458 
+
+show data in the leaf node after split in page 1
+key = 1634 key = 1766 
+
+show data in the leaf node after split in page 2
+key = 1872 key = 2130 key = 2458 
+
+in leaf node feedbackTuple.newPid = 15
+insert pageNo = 15, key = 1872
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 723, x = 1, Pid = 3, key = 1634, x = 2, Pid = 6, key = 2601, x = 3, Pid = 9, key = 2751, Pid = 14
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 723, x = 1, Pid = 3, key = 1634, x = 2, Pid = 6, key = 1872, x = 3, Pid = 15, key = 2601, x = 4, Pid = 9, key = 2751, Pid = 14
+
+key = 3294 inserted
+show data in the leaf node before split
+key = 2995 key = 3132 key = 3255 key = 3290 
+
+show data in the leaf node after split in page 1
+key = 2995 key = 3132 
+
+show data in the leaf node after split in page 2
+key = 3255 key = 3290 key = 3294 
+
+in leaf node feedbackTuple.newPid = 16
+insert pageNo = 16, key = 3255
+non-leaf node before insert, level = 1
+x = 0, Pid = 5, key = 3390, x = 1, Pid = 7, key = 3590, x = 2, Pid = 13, key = 4216, x = 3, Pid = 8, key = 4541, Pid = 12
+
+non-leaf node after insert
+x = 0, Pid = 5, key = 3255, x = 1, Pid = 16, key = 3390, x = 2, Pid = 7, key = 3590, x = 3, Pid = 13, key = 4216, x = 4, Pid = 8, key = 4541, Pid = 12
+
+key = 1695 inserted
+show leaf node after key insertion
+1634 1695 1766 
+
+key = 1903 inserted
+show leaf node after key insertion
+1872 1903 2130 2458 
+
+key = 12 inserted
+show data in the leaf node before split
+key = 245 key = 286 key = 306 key = 307 
+
+show data in the leaf node after split in page 1
+key = 12 key = 245 
+
+show data in the leaf node after split in page 2
+key = 286 key = 306 key = 307 
+
+in leaf node feedbackTuple.newPid = 17
+insert split pageNo = 17, key = 286
+non-leaf node before insert split, level = 1
+x = 0, Pid = 2, key = 723, x = 1, Pid = 3, key = 1634, x = 2, Pid = 6, key = 1872, x = 3, Pid = 15, key = 2601, x = 4, Pid = 9, key = 2751, Pid = 14
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 1, key = 307, x = 1, Pid = 7, key = 1, x = 2, Pid = 3, key = 1, Pid = 6
+
+non-leaf node (new) after insert split
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, Pid = 14
+in non-leaf node feedbackTuple.newPid = 18
+
+insert pageNo = 18, key = 1
+non-leaf node before insert, level = 0
+x = 0, Pid = 4, key = 2995, Pid = 10
+
+non-leaf node after insert
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 2995, Pid = 10
+
+key = 3437 inserted
+show leaf node after key insertion
+3390 3437 3585 
+
+key = 2422 inserted
+show leaf node after key insertion
+2422 2751 2838 2889 
+
+key = 697 inserted
+show data in the leaf node before split
+key = 2422 key = 2751 key = 2838 key = 2889 
+
+show data in the leaf node after split in page 1
+key = 697 key = 2422 
+
+show data in the leaf node after split in page 2
+key = 2751 key = 2838 key = 2889 
+
+in leaf node feedbackTuple.newPid = 19
+insert pageNo = 19, key = 2751
+non-leaf node before insert, level = 1
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, Pid = 14
+
+non-leaf node after insert
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, x = 2, Pid = 14, key = 2751, Pid = 19
+
+key = 142 inserted
+show leaf node after key insertion
+142 697 2422 
+
+key = 3589 inserted
+show leaf node after key insertion
+3390 3437 3585 3589 
+
+key = 2142 inserted
+show leaf node after key insertion
+142 697 2142 2422 
+
+key = 247 inserted
+show data in the leaf node before split
+key = 142 key = 697 key = 2142 key = 2422 
+
+show data in the leaf node after split in page 1
+key = 142 key = 247 
+
+show data in the leaf node after split in page 2
+key = 697 key = 2142 key = 2422 
+
+in leaf node feedbackTuple.newPid = 20
+insert pageNo = 20, key = 697
+non-leaf node before insert, level = 1
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, x = 2, Pid = 14, key = 2751, Pid = 19
+
+non-leaf node after insert
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, x = 2, Pid = 14, key = 697, x = 3, Pid = 20, key = 2751, Pid = 19
+
+key = 2809 inserted
+show leaf node after key insertion
+2751 2809 2838 2889 
+
+key = 356 inserted
+show leaf node after key insertion
+142 247 356 
+
+key = 2467 inserted
+show leaf node after key insertion
+697 2142 2422 2467 
+
+key = 1454 inserted
+show data in the leaf node before split
+key = 697 key = 2142 key = 2422 key = 2467 
+
+show data in the leaf node after split in page 1
+key = 697 key = 1454 
+
+show data in the leaf node after split in page 2
+key = 2142 key = 2422 key = 2467 
+
+in leaf node feedbackTuple.newPid = 21
+insert pageNo = 21, key = 2142
+non-leaf node before insert, level = 1
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, x = 2, Pid = 14, key = 697, x = 3, Pid = 20, key = 2751, Pid = 19
+
+non-leaf node after insert
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, x = 2, Pid = 14, key = 697, x = 3, Pid = 20, key = 2142, x = 4, Pid = 21, key = 2751, Pid = 19
+
+key = 2132 inserted
+show leaf node after key insertion
+697 1454 2132 
+
+key = 315 inserted
+show leaf node after key insertion
+142 247 315 356 
+
+key = 1002 inserted
+show leaf node after key insertion
+697 1002 1454 2132 
+
+key = 1163 inserted
+show data in the leaf node before split
+key = 697 key = 1002 key = 1454 key = 2132 
+
+show data in the leaf node after split in page 1
+key = 697 key = 1002 
+
+show data in the leaf node after split in page 2
+key = 1163 key = 1454 key = 2132 
+
+in leaf node feedbackTuple.newPid = 22
+insert split pageNo = 22, key = 1163
+non-leaf node before insert split, level = 1
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, x = 2, Pid = 14, key = 697, x = 3, Pid = 20, key = 2142, x = 4, Pid = 21, key = 2751, Pid = 19
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, x = 2, Pid = 14, key = 697, Pid = 20
+
+non-leaf node (new) after insert split
+x = 0, Pid = 22, key = 2142, x = 1, Pid = 21, key = 2751, Pid = 19
+in non-leaf node feedbackTuple.newPid = 23
+
+insert pageNo = 23, key = 1163
+non-leaf node before insert, level = 0
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 2995, Pid = 10
+
+non-leaf node after insert
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 1163, x = 2, Pid = 23, key = 2995, Pid = 10
+
+key = 2917 inserted
+show data in the leaf node before split
+key = 2751 key = 2809 key = 2838 key = 2889 
+
+show data in the leaf node after split in page 1
+key = 2751 key = 2809 
+
+show data in the leaf node after split in page 2
+key = 2838 key = 2889 key = 2917 
+
+in leaf node feedbackTuple.newPid = 24
+insert pageNo = 24, key = 2838
+non-leaf node before insert, level = 1
+x = 0, Pid = 22, key = 2142, x = 1, Pid = 21, key = 2751, Pid = 19
+
+non-leaf node after insert
+x = 0, Pid = 22, key = 2142, x = 1, Pid = 21, key = 2751, x = 2, Pid = 19, key = 2838, Pid = 24
+
+key = 4035 inserted
+show leaf node after key insertion
+3590 3745 4035 4073 
+
+key = 2945 inserted
+show leaf node after key insertion
+2838 2889 2917 2945 
+
+key = 2360 inserted
+show leaf node after key insertion
+2142 2360 2422 2467 
+
+key = 198 inserted
+show data in the leaf node before split
+key = 142 key = 247 key = 315 key = 356 
+
+show data in the leaf node after split in page 1
+key = 142 key = 198 
+
+show data in the leaf node after split in page 2
+key = 247 key = 315 key = 356 
+
+in leaf node feedbackTuple.newPid = 25
+insert pageNo = 25, key = 247
+non-leaf node before insert, level = 1
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, x = 2, Pid = 14, key = 697, Pid = 20
+
+non-leaf node after insert
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, x = 2, Pid = 14, key = 247, x = 3, Pid = 25, key = 697, Pid = 20
+
+key = 2750 inserted
+show data in the leaf node before split
+key = 2142 key = 2360 key = 2422 key = 2467 
+
+show data in the leaf node after split in page 1
+key = 2142 key = 2360 
+
+show data in the leaf node after split in page 2
+key = 2422 key = 2467 key = 2750 
+
+in leaf node feedbackTuple.newPid = 26
+insert pageNo = 26, key = 2422
+non-leaf node before insert, level = 1
+x = 0, Pid = 22, key = 2142, x = 1, Pid = 21, key = 2751, x = 2, Pid = 19, key = 2838, Pid = 24
+
+non-leaf node after insert
+x = 0, Pid = 22, key = 2142, x = 1, Pid = 21, key = 2422, x = 2, Pid = 26, key = 2751, x = 3, Pid = 19, key = 2838, Pid = 24
+
+key = 13 inserted
+show leaf node after key insertion
+13 142 198 
+
+key = 2500 inserted
+show leaf node after key insertion
+2422 2467 2500 2750 
+
+key = 238 inserted
+show leaf node after key insertion
+13 142 198 238 
+
+key = 2285 inserted
+show leaf node after key insertion
+2142 2285 2360 
+
+key = 4877 inserted
+show data in the leaf node before split
+key = 4541 key = 4667 key = 4772 key = 4967 
+
+show data in the leaf node after split in page 1
+key = 4541 key = 4667 
+
+show data in the leaf node after split in page 2
+key = 4772 key = 4877 key = 4967 
+
+in leaf node feedbackTuple.newPid = 27
+insert split pageNo = 27, key = 4772
+non-leaf node before insert split, level = 1
+x = 0, Pid = 5, key = 3255, x = 1, Pid = 16, key = 3390, x = 2, Pid = 7, key = 3590, x = 3, Pid = 13, key = 4216, x = 4, Pid = 8, key = 4541, Pid = 12
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 5, key = 3255, x = 1, Pid = 16, key = 3390, x = 2, Pid = 7, key = 3590, Pid = 13
+
+non-leaf node (new) after insert split
+x = 0, Pid = 8, key = 4541, x = 1, Pid = 12, key = 4772, Pid = 27
+in non-leaf node feedbackTuple.newPid = 28
+
+insert pageNo = 28, key = 4216
+non-leaf node before insert, level = 0
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 1163, x = 2, Pid = 23, key = 2995, Pid = 10
+
+non-leaf node after insert
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 1163, x = 2, Pid = 23, key = 2995, x = 3, Pid = 10, key = 4216, Pid = 28
+
+key = 3404 inserted
+show data in the leaf node before split
+key = 3390 key = 3437 key = 3585 key = 3589 
+
+show data in the leaf node after split in page 1
+key = 3390 key = 3404 
+
+show data in the leaf node after split in page 2
+key = 3437 key = 3585 key = 3589 
+
+in leaf node feedbackTuple.newPid = 29
+insert pageNo = 29, key = 3437
+non-leaf node before insert, level = 1
+x = 0, Pid = 5, key = 3255, x = 1, Pid = 16, key = 3390, x = 2, Pid = 7, key = 3590, Pid = 13
+
+non-leaf node after insert
+x = 0, Pid = 5, key = 3255, x = 1, Pid = 16, key = 3390, x = 2, Pid = 7, key = 3437, x = 3, Pid = 29, key = 3590, Pid = 13
+
+key = 4517 inserted
+show leaf node after key insertion
+4216 4383 4517 
+
+key = 424 inserted
+show leaf node after key insertion
+247 315 356 424 
+
+key = 3575 inserted
+show leaf node after key insertion
+3437 3575 3585 3589 
+
+key = 3976 inserted
+show data in the leaf node before split
+key = 3590 key = 3745 key = 4035 key = 4073 
+
+show data in the leaf node after split in page 1
+key = 3590 key = 3745 
+
+show data in the leaf node after split in page 2
+key = 3976 key = 4035 key = 4073 
+
+in leaf node feedbackTuple.newPid = 30
+insert pageNo = 30, key = 3976
+non-leaf node before insert, level = 1
+x = 0, Pid = 5, key = 3255, x = 1, Pid = 16, key = 3390, x = 2, Pid = 7, key = 3437, x = 3, Pid = 29, key = 3590, Pid = 13
+
+non-leaf node after insert
+x = 0, Pid = 5, key = 3255, x = 1, Pid = 16, key = 3390, x = 2, Pid = 7, key = 3437, x = 3, Pid = 29, key = 3590, x = 4, Pid = 13, key = 3976, Pid = 30
+
+key = 982 inserted
+show leaf node after key insertion
+697 982 1002 
+
+key = 1669 inserted
+show leaf node after key insertion
+1163 1454 1669 2132 
+
+key = 919 inserted
+show leaf node after key insertion
+697 919 982 1002 
+
+key = 674 inserted
+show data in the leaf node before split
+key = 247 key = 315 key = 356 key = 424 
+
+show data in the leaf node after split in page 1
+key = 247 key = 315 
+
+show data in the leaf node after split in page 2
+key = 356 key = 424 key = 674 
+
+in leaf node feedbackTuple.newPid = 31
+insert pageNo = 31, key = 356
+non-leaf node before insert, level = 1
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, x = 2, Pid = 14, key = 247, x = 3, Pid = 25, key = 697, Pid = 20
+
+non-leaf node after insert
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, x = 2, Pid = 14, key = 247, x = 3, Pid = 25, key = 356, x = 4, Pid = 31, key = 697, Pid = 20
+
+key = 3918 inserted
+show leaf node after key insertion
+3590 3745 3918 
+
+key = 702 inserted
+show data in the leaf node before split
+key = 697 key = 919 key = 982 key = 1002 
+
+show data in the leaf node after split in page 1
+key = 697 key = 702 
+
+show data in the leaf node after split in page 2
+key = 919 key = 982 key = 1002 
+
+in leaf node feedbackTuple.newPid = 32
+insert split pageNo = 32, key = 919
+non-leaf node before insert split, level = 1
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, x = 2, Pid = 14, key = 247, x = 3, Pid = 25, key = 356, x = 4, Pid = 31, key = 697, Pid = 20
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, x = 2, Pid = 14, key = 247, Pid = 25
+
+non-leaf node (new) after insert split
+x = 0, Pid = 31, key = 697, x = 1, Pid = 20, key = 919, Pid = 32
+in non-leaf node feedbackTuple.newPid = 33
+
+insert pageNo = 33, key = 356
+non-leaf node before insert, level = 0
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 1163, x = 2, Pid = 23, key = 2995, x = 3, Pid = 10, key = 4216, Pid = 28
+
+non-leaf node after insert
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 356, x = 2, Pid = 33, key = 1163, x = 3, Pid = 23, key = 2995, x = 4, Pid = 10, key = 4216, Pid = 28
+
+key = 4422 inserted
+show leaf node after key insertion
+4216 4383 4422 4517 
+
+key = 1904 inserted
+show data in the leaf node before split
+key = 1163 key = 1454 key = 1669 key = 2132 
+
+show data in the leaf node after split in page 1
+key = 1163 key = 1454 
+
+show data in the leaf node after split in page 2
+key = 1669 key = 1904 key = 2132 
+
+in leaf node feedbackTuple.newPid = 34
+insert pageNo = 34, key = 1669
+non-leaf node before insert, level = 1
+x = 0, Pid = 22, key = 2142, x = 1, Pid = 21, key = 2422, x = 2, Pid = 26, key = 2751, x = 3, Pid = 19, key = 2838, Pid = 24
+
+non-leaf node after insert
+x = 0, Pid = 22, key = 1669, x = 1, Pid = 34, key = 2142, x = 2, Pid = 21, key = 2422, x = 3, Pid = 26, key = 2751, x = 4, Pid = 19, key = 2838, Pid = 24
+
+key = 517 inserted
+show leaf node after key insertion
+356 424 517 674 
+
+key = 3446 inserted
+show data in the leaf node before split
+key = 3437 key = 3575 key = 3585 key = 3589 
+
+show data in the leaf node after split in page 1
+key = 3437 key = 3446 
+
+show data in the leaf node after split in page 2
+key = 3575 key = 3585 key = 3589 
+
+in leaf node feedbackTuple.newPid = 35
+insert split pageNo = 35, key = 3575
+non-leaf node before insert split, level = 1
+x = 0, Pid = 5, key = 3255, x = 1, Pid = 16, key = 3390, x = 2, Pid = 7, key = 3437, x = 3, Pid = 29, key = 3590, x = 4, Pid = 13, key = 3976, Pid = 30
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 5, key = 3255, x = 1, Pid = 16, key = 3390, x = 2, Pid = 7, key = 3437, Pid = 29
+
+non-leaf node (new) after insert split
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3976, Pid = 30
+in non-leaf node feedbackTuple.newPid = 36
+
+insert split pageNo = 36, key = 3575
+non-leaf node before insert split, level = 0
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 356, x = 2, Pid = 33, key = 1163, x = 3, Pid = 23, key = 2995, x = 4, Pid = 10, key = 4216, Pid = 28
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 356, x = 2, Pid = 33, key = 1163, Pid = 23
+
+non-leaf node (new) after insert split
+x = 0, Pid = 10, key = 3575, x = 1, Pid = 36, key = 4216, Pid = 28
+in non-leaf node feedbackTuple.newPid = 37
+
+key = 1607 inserted
+show leaf node after key insertion
+1163 1454 1607 
+
+key = 3515 inserted
+show leaf node after key insertion
+3437 3446 3515 
+
+key = 4487 inserted
+show data in the leaf node before split
+key = 4216 key = 4383 key = 4422 key = 4517 
+
+show data in the leaf node after split in page 1
+key = 4216 key = 4383 
+
+show data in the leaf node after split in page 2
+key = 4422 key = 4487 key = 4517 
+
+in leaf node feedbackTuple.newPid = 39
+insert pageNo = 39, key = 4422
+non-leaf node before insert, level = 1
+x = 0, Pid = 8, key = 4541, x = 1, Pid = 12, key = 4772, Pid = 27
+
+non-leaf node after insert
+x = 0, Pid = 8, key = 4422, x = 1, Pid = 39, key = 4541, x = 2, Pid = 12, key = 4772, Pid = 27
+
+key = 127 inserted
+show data in the leaf node before split
+key = 13 key = 142 key = 198 key = 238 
+
+show data in the leaf node after split in page 1
+key = 13 key = 127 
+
+show data in the leaf node after split in page 2
+key = 142 key = 198 key = 238 
+
+in leaf node feedbackTuple.newPid = 40
+insert pageNo = 40, key = 142
+non-leaf node before insert, level = 1
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, x = 2, Pid = 14, key = 247, Pid = 25
+
+non-leaf node after insert
+x = 0, Pid = 15, key = 1, x = 1, Pid = 9, key = 1, x = 2, Pid = 14, key = 142, x = 3, Pid = 40, key = 247, Pid = 25
+
+key = 987 inserted
+show leaf node after key insertion
+919 982 987 1002 
+
+key = 626 inserted
+show data in the leaf node before split
+key = 356 key = 424 key = 517 key = 674 
+
+show data in the leaf node after split in page 1
+key = 356 key = 424 
+
+show data in the leaf node after split in page 2
+key = 517 key = 626 key = 674 
+
+in leaf node feedbackTuple.newPid = 41
+insert pageNo = 41, key = 517
+non-leaf node before insert, level = 1
+x = 0, Pid = 31, key = 697, x = 1, Pid = 20, key = 919, Pid = 32
+
+non-leaf node after insert
+x = 0, Pid = 31, key = 517, x = 1, Pid = 41, key = 697, x = 2, Pid = 20, key = 919, Pid = 32
+
+key = 4805 inserted
+show leaf node after key insertion
+4772 4805 4877 4967 
+
+key = 2604 inserted
+show data in the leaf node before split
+key = 2422 key = 2467 key = 2500 key = 2750 
+
+show data in the leaf node after split in page 1
+key = 2422 key = 2467 
+
+show data in the leaf node after split in page 2
+key = 2500 key = 2604 key = 2750 
+
+in leaf node feedbackTuple.newPid = 42
+insert split pageNo = 42, key = 2500
+non-leaf node before insert split, level = 1
+x = 0, Pid = 22, key = 1669, x = 1, Pid = 34, key = 2142, x = 2, Pid = 21, key = 2422, x = 3, Pid = 26, key = 2751, x = 4, Pid = 19, key = 2838, Pid = 24
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 22, key = 1669, x = 1, Pid = 34, key = 2142, x = 2, Pid = 21, key = 2422, Pid = 26
+
+non-leaf node (new) after insert split
+x = 0, Pid = 42, key = 2751, x = 1, Pid = 19, key = 2838, Pid = 24
+in non-leaf node feedbackTuple.newPid = 43
+
+insert pageNo = 43, key = 2500
+non-leaf node before insert, level = 0
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 356, x = 2, Pid = 33, key = 1163, Pid = 23
+
+non-leaf node after insert
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 356, x = 2, Pid = 33, key = 1163, x = 3, Pid = 23, key = 2500, Pid = 43
+
+key = 1804 inserted
+show leaf node after key insertion
+1669 1804 1904 2132 
+
+key = 735 inserted
+show leaf node after key insertion
+697 702 735 
+
+key = 716 inserted
+show leaf node after key insertion
+697 702 716 735 
+
+key = 2066 inserted
+show data in the leaf node before split
+key = 1669 key = 1804 key = 1904 key = 2132 
+
+show data in the leaf node after split in page 1
+key = 1669 key = 1804 
+
+show data in the leaf node after split in page 2
+key = 1904 key = 2066 key = 2132 
+
+in leaf node feedbackTuple.newPid = 44
+insert pageNo = 44, key = 1904
+non-leaf node before insert, level = 1
+x = 0, Pid = 22, key = 1669, x = 1, Pid = 34, key = 2142, x = 2, Pid = 21, key = 2422, Pid = 26
+
+non-leaf node after insert
+x = 0, Pid = 22, key = 1669, x = 1, Pid = 34, key = 1904, x = 2, Pid = 44, key = 2142, x = 3, Pid = 21, key = 2422, Pid = 26
+
+key = 1162 inserted
+show data in the leaf node before split
+key = 919 key = 982 key = 987 key = 1002 
+
+show data in the leaf node after split in page 1
+key = 919 key = 982 
+
+show data in the leaf node after split in page 2
+key = 987 key = 1002 key = 1162 
+
+in leaf node feedbackTuple.newPid = 45
+insert pageNo = 45, key = 987
+non-leaf node before insert, level = 1
+x = 0, Pid = 31, key = 517, x = 1, Pid = 41, key = 697, x = 2, Pid = 20, key = 919, Pid = 32
+
+non-leaf node after insert
+x = 0, Pid = 31, key = 517, x = 1, Pid = 41, key = 697, x = 2, Pid = 20, key = 919, x = 3, Pid = 32, key = 987, Pid = 45
+
+key = 4542 inserted
+show leaf node after key insertion
+4541 4542 4667 
+
+key = 3015 inserted
+show leaf node after key insertion
+2995 3015 3132 
+
+key = 3968 inserted
+show leaf node after key insertion
+3590 3745 3918 3968 
+
+key = 1652 inserted
+show leaf node after key insertion
+1163 1454 1607 1652 
+
+key = 3903 inserted
+show data in the leaf node before split
+key = 3590 key = 3745 key = 3918 key = 3968 
+
+show data in the leaf node after split in page 1
+key = 3590 key = 3745 
+
+show data in the leaf node after split in page 2
+key = 3903 key = 3918 key = 3968 
+
+in leaf node feedbackTuple.newPid = 46
+insert pageNo = 46, key = 3903
+non-leaf node before insert, level = 1
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3976, Pid = 30
+
+non-leaf node after insert
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3903, x = 2, Pid = 46, key = 3976, Pid = 30
+
+key = 172 inserted
+show leaf node after key insertion
+142 172 198 238 
+
+key = 1018 inserted
+show leaf node after key insertion
+987 1002 1018 1162 
+
+key = 4200 inserted
+show leaf node after key insertion
+3976 4035 4073 4200 
+
+key = 3006 inserted
+show leaf node after key insertion
+2995 3006 3015 3132 
+
+key = 4577 inserted
+show leaf node after key insertion
+4541 4542 4577 4667 
+
+key = 1495 inserted
+show data in the leaf node before split
+key = 1163 key = 1454 key = 1607 key = 1652 
+
+show data in the leaf node after split in page 1
+key = 1163 key = 1454 
+
+show data in the leaf node after split in page 2
+key = 1495 key = 1607 key = 1652 
+
+in leaf node feedbackTuple.newPid = 47
+insert pageNo = 47, key = 1495
+non-leaf node before insert, level = 1
+x = 0, Pid = 22, key = 1669, x = 1, Pid = 34, key = 1904, x = 2, Pid = 44, key = 2142, x = 3, Pid = 21, key = 2422, Pid = 26
+
+non-leaf node after insert
+x = 0, Pid = 22, key = 1495, x = 1, Pid = 47, key = 1669, x = 2, Pid = 34, key = 1904, x = 3, Pid = 44, key = 2142, x = 4, Pid = 21, key = 2422, Pid = 26
+
+key = 877 inserted
+show data in the leaf node before split
+key = 697 key = 702 key = 716 key = 735 
+
+show data in the leaf node after split in page 1
+key = 697 key = 702 
+
+show data in the leaf node after split in page 2
+key = 716 key = 735 key = 877 
+
+in leaf node feedbackTuple.newPid = 48
+insert pageNo = 48, key = 716
+non-leaf node before insert, level = 1
+x = 0, Pid = 31, key = 517, x = 1, Pid = 41, key = 697, x = 2, Pid = 20, key = 919, x = 3, Pid = 32, key = 987, Pid = 45
+
+non-leaf node after insert
+x = 0, Pid = 31, key = 517, x = 1, Pid = 41, key = 697, x = 2, Pid = 20, key = 716, x = 3, Pid = 48, key = 919, x = 4, Pid = 32, key = 987, Pid = 45
+
+key = 2592 inserted
+show leaf node after key insertion
+2500 2592 2604 2750 
+
+key = 1290 inserted
+show leaf node after key insertion
+1163 1290 1454 
+
+key = 3131 inserted
+show data in the leaf node before split
+key = 2995 key = 3006 key = 3015 key = 3132 
+
+show data in the leaf node after split in page 1
+key = 2995 key = 3006 
+
+show data in the leaf node after split in page 2
+key = 3015 key = 3131 key = 3132 
+
+in leaf node feedbackTuple.newPid = 49
+insert pageNo = 49, key = 3015
+non-leaf node before insert, level = 1
+x = 0, Pid = 5, key = 3255, x = 1, Pid = 16, key = 3390, x = 2, Pid = 7, key = 3437, Pid = 29
+
+non-leaf node after insert
+x = 0, Pid = 5, key = 3015, x = 1, Pid = 49, key = 3255, x = 2, Pid = 16, key = 3390, x = 3, Pid = 7, key = 3437, Pid = 29
+
+key = 2251 inserted
+show leaf node after key insertion
+2142 2251 2285 2360 
+
+key = 3427 inserted
+show leaf node after key insertion
+3390 3404 3427 
+
+key = 2855 inserted
+show data in the leaf node before split
+key = 2838 key = 2889 key = 2917 key = 2945 
+
+show data in the leaf node after split in page 1
+key = 2838 key = 2855 
+
+show data in the leaf node after split in page 2
+key = 2889 key = 2917 key = 2945 
+
+in leaf node feedbackTuple.newPid = 50
+insert pageNo = 50, key = 2889
+non-leaf node before insert, level = 1
+x = 0, Pid = 42, key = 2751, x = 1, Pid = 19, key = 2838, Pid = 24
+
+non-leaf node after insert
+x = 0, Pid = 42, key = 2751, x = 1, Pid = 19, key = 2838, x = 2, Pid = 24, key = 2889, Pid = 50
+
+key = 3129 inserted
+show leaf node after key insertion
+3015 3129 3131 3132 
+
+key = 1528 inserted
+show leaf node after key insertion
+1495 1528 1607 1652 
+
+key = 1342 inserted
+show leaf node after key insertion
+1163 1290 1342 1454 
+
+key = 1306 inserted
+show data in the leaf node before split
+key = 1163 key = 1290 key = 1342 key = 1454 
+
+show data in the leaf node after split in page 1
+key = 1163 key = 1290 
+
+show data in the leaf node after split in page 2
+key = 1306 key = 1342 key = 1454 
+
+in leaf node feedbackTuple.newPid = 51
+insert split pageNo = 51, key = 1306
+non-leaf node before insert split, level = 1
+x = 0, Pid = 22, key = 1495, x = 1, Pid = 47, key = 1669, x = 2, Pid = 34, key = 1904, x = 3, Pid = 44, key = 2142, x = 4, Pid = 21, key = 2422, Pid = 26
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 2, key = 1454, x = 1, Pid = 17, key = 1, x = 2, Pid = 47, key = 1, Pid = 34
+
+non-leaf node (new) after insert split
+x = 0, Pid = 44, key = 1, x = 1, Pid = 21, key = 1, Pid = 26
+in non-leaf node feedbackTuple.newPid = 52
+
+insert pageNo = 52, key = 1
+non-leaf node before insert, level = 0
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 356, x = 2, Pid = 33, key = 1163, x = 3, Pid = 23, key = 2500, Pid = 43
+
+non-leaf node after insert
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 1, x = 2, Pid = 52, key = 356, x = 3, Pid = 33, key = 1163, x = 4, Pid = 23, key = 2500, Pid = 43
+
+key = 3877 inserted
+show leaf node after key insertion
+3590 3745 3877 
+
+key = 2621 inserted
+show data in the leaf node before split
+key = 2500 key = 2592 key = 2604 key = 2750 
+
+show data in the leaf node after split in page 1
+key = 2500 key = 2592 
+
+show data in the leaf node after split in page 2
+key = 2604 key = 2621 key = 2750 
+
+in leaf node feedbackTuple.newPid = 53
+insert pageNo = 53, key = 2604
+non-leaf node before insert, level = 1
+x = 0, Pid = 42, key = 2751, x = 1, Pid = 19, key = 2838, x = 2, Pid = 24, key = 2889, Pid = 50
+
+non-leaf node after insert
+x = 0, Pid = 42, key = 2604, x = 1, Pid = 53, key = 2751, x = 2, Pid = 19, key = 2838, x = 3, Pid = 24, key = 2889, Pid = 50
+
+key = 622 inserted
+show leaf node after key insertion
+517 622 626 674 
+
+key = 4351 inserted
+show leaf node after key insertion
+4216 4351 4383 
+
+key = 237 inserted
+show leaf node after key insertion
+237 2422 2467 
+
+key = 813 inserted
+show leaf node after key insertion
+716 735 813 877 
+
+key = 1952 inserted
+show leaf node after key insertion
+1669 1804 1952 
+
+key = 3335 inserted
+show leaf node after key insertion
+3255 3290 3294 3335 
+
+key = 1560 inserted
+show leaf node after key insertion
+1560 1669 1804 1952 
+
+key = 4140 inserted
+show data in the leaf node before split
+key = 3976 key = 4035 key = 4073 key = 4200 
+
+show data in the leaf node after split in page 1
+key = 3976 key = 4035 
+
+show data in the leaf node after split in page 2
+key = 4073 key = 4140 key = 4200 
+
+in leaf node feedbackTuple.newPid = 54
+insert pageNo = 54, key = 4073
+non-leaf node before insert, level = 1
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3903, x = 2, Pid = 46, key = 3976, Pid = 30
+
+non-leaf node after insert
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3903, x = 2, Pid = 46, key = 3976, x = 3, Pid = 30, key = 4073, Pid = 54
+
+key = 2817 inserted
+show leaf node after key insertion
+2751 2809 2817 
+
+key = 774 inserted
+show data in the leaf node before split
+key = 716 key = 735 key = 813 key = 877 
+
+show data in the leaf node after split in page 1
+key = 716 key = 735 
+
+show data in the leaf node after split in page 2
+key = 774 key = 813 key = 877 
+
+in leaf node feedbackTuple.newPid = 55
+insert split pageNo = 55, key = 774
+non-leaf node before insert split, level = 1
+x = 0, Pid = 31, key = 517, x = 1, Pid = 41, key = 697, x = 2, Pid = 20, key = 716, x = 3, Pid = 48, key = 919, x = 4, Pid = 32, key = 987, Pid = 45
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 31, key = 517, x = 1, Pid = 41, key = 697, x = 2, Pid = 20, key = 716, Pid = 48
+
+non-leaf node (new) after insert split
+x = 0, Pid = 55, key = 919, x = 1, Pid = 32, key = 987, Pid = 45
+in non-leaf node feedbackTuple.newPid = 56
+
+insert split pageNo = 56, key = 774
+non-leaf node before insert split, level = 0
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 1, x = 2, Pid = 52, key = 356, x = 3, Pid = 33, key = 1163, x = 4, Pid = 23, key = 2500, Pid = 43
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 1, x = 2, Pid = 52, key = 356, Pid = 33
+
+non-leaf node (new) after insert split
+x = 0, Pid = 56, key = 1163, x = 1, Pid = 23, key = 2500, Pid = 43
+in non-leaf node feedbackTuple.newPid = 57
+
+insert pageNo = 57, key = 774
+non-leaf node before insert, level = 0
+x = 0, Pid = 11, key = 2995, Pid = 37
+
+non-leaf node after insert
+x = 0, Pid = 11, key = 774, x = 1, Pid = 57, key = 2995, Pid = 37
+
+key = 2269 inserted
+show data in the leaf node before split
+key = 1560 key = 1669 key = 1804 key = 1952 
+
+show data in the leaf node after split in page 1
+key = 1560 key = 1669 
+
+show data in the leaf node after split in page 2
+key = 1804 key = 1952 key = 2269 
+
+in leaf node feedbackTuple.newPid = 58
+insert pageNo = 58, key = 1804
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 1454, x = 1, Pid = 17, key = 1, x = 2, Pid = 47, key = 1, Pid = 34
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 1454, x = 1, Pid = 17, key = 1, x = 2, Pid = 47, key = 1, x = 3, Pid = 34, key = 1804, Pid = 58
+
+key = 521 inserted
+show data in the leaf node before split
+key = 517 key = 622 key = 626 key = 674 
+
+show data in the leaf node after split in page 1
+key = 517 key = 521 
+
+show data in the leaf node after split in page 2
+key = 622 key = 626 key = 674 
+
+in leaf node feedbackTuple.newPid = 59
+insert pageNo = 59, key = 622
+non-leaf node before insert, level = 1
+x = 0, Pid = 31, key = 517, x = 1, Pid = 41, key = 697, x = 2, Pid = 20, key = 716, Pid = 48
+
+non-leaf node after insert
+x = 0, Pid = 31, key = 517, x = 1, Pid = 41, key = 622, x = 2, Pid = 59, key = 697, x = 3, Pid = 20, key = 716, Pid = 48
+
+key = 1797 inserted
+show leaf node after key insertion
+1560 1669 1797 
+
+key = 1784 inserted
+show leaf node after key insertion
+1560 1669 1784 1797 
+
+key = 2661 inserted
+show leaf node after key insertion
+2604 2621 2661 2750 
+
+key = 684 inserted
+show leaf node after key insertion
+622 626 674 684 
+
+key = 2257 inserted
+show leaf node after key insertion
+1804 1952 2257 2269 
+
+key = 2365 inserted
+show data in the leaf node before split
+key = 1804 key = 1952 key = 2257 key = 2269 
+
+show data in the leaf node after split in page 1
+key = 1804 key = 1952 
+
+show data in the leaf node after split in page 2
+key = 2257 key = 2269 key = 2365 
+
+in leaf node feedbackTuple.newPid = 60
+insert pageNo = 60, key = 2257
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 1454, x = 1, Pid = 17, key = 1, x = 2, Pid = 47, key = 1, x = 3, Pid = 34, key = 1804, Pid = 58
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 1454, x = 1, Pid = 17, key = 1, x = 2, Pid = 47, key = 1, x = 3, Pid = 34, key = 1804, x = 4, Pid = 58, key = 2257, Pid = 60
+
+key = 4641 inserted
+show data in the leaf node before split
+key = 4541 key = 4542 key = 4577 key = 4667 
+
+show data in the leaf node after split in page 1
+key = 4541 key = 4542 
+
+show data in the leaf node after split in page 2
+key = 4577 key = 4641 key = 4667 
+
+in leaf node feedbackTuple.newPid = 61
+insert pageNo = 61, key = 4577
+non-leaf node before insert, level = 1
+x = 0, Pid = 8, key = 4422, x = 1, Pid = 39, key = 4541, x = 2, Pid = 12, key = 4772, Pid = 27
+
+non-leaf node after insert
+x = 0, Pid = 8, key = 4422, x = 1, Pid = 39, key = 4541, x = 2, Pid = 12, key = 4577, x = 3, Pid = 61, key = 4772, Pid = 27
+
+key = 472 inserted
+show leaf node after key insertion
+356 424 472 
+
+key = 1488 inserted
+show data in the leaf node before split
+key = 1560 key = 1669 key = 1784 key = 1797 
+
+show data in the leaf node after split in page 1
+key = 1488 key = 1560 
+
+show data in the leaf node after split in page 2
+key = 1669 key = 1784 key = 1797 
+
+in leaf node feedbackTuple.newPid = 62
+insert split pageNo = 62, key = 1669
+non-leaf node before insert split, level = 1
+x = 0, Pid = 2, key = 1454, x = 1, Pid = 17, key = 1, x = 2, Pid = 47, key = 1, x = 3, Pid = 34, key = 1804, x = 4, Pid = 58, key = 2257, Pid = 60
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 2, key = 1454, x = 1, Pid = 17, key = 1, x = 2, Pid = 47, key = 1, Pid = 34
+
+non-leaf node (new) after insert split
+x = 0, Pid = 62, key = 1804, x = 1, Pid = 58, key = 2257, Pid = 60
+in non-leaf node feedbackTuple.newPid = 63
+
+insert pageNo = 63, key = 1669
+non-leaf node before insert, level = 0
+x = 0, Pid = 56, key = 1163, x = 1, Pid = 23, key = 2500, Pid = 43
+
+non-leaf node after insert
+x = 0, Pid = 56, key = 1163, x = 1, Pid = 23, key = 1669, x = 2, Pid = 63, key = 2500, Pid = 43
+
+key = 1400 inserted
+show leaf node after key insertion
+12 245 1400 
+
+key = 4298 inserted
+show leaf node after key insertion
+4216 4298 4351 4383 
+
+key = 3524 inserted
+show leaf node after key insertion
+3437 3446 3515 3524 
+
+key = 3597 inserted
+show leaf node after key insertion
+3590 3597 3745 3877 
+
+key = 1308 inserted
+show leaf node after key insertion
+12 245 1308 1400 
+
+key = 2008 inserted
+show leaf node after key insertion
+1804 1952 2008 
+
+key = 4758 inserted
+show leaf node after key insertion
+4577 4641 4667 4758 
+
+key = 2972 inserted
+show leaf node after key insertion
+2889 2917 2945 2972 
+
+key = 344 inserted
+show leaf node after key insertion
+237 344 2422 2467 
+
+key = 847 inserted
+show leaf node after key insertion
+774 813 847 877 
+
+key = 1844 inserted
+show leaf node after key insertion
+1804 1844 1952 2008 
+
+key = 138 inserted
+show data in the leaf node before split
+key = 237 key = 344 key = 2422 key = 2467 
+
+show data in the leaf node after split in page 1
+key = 138 key = 237 
+
+show data in the leaf node after split in page 2
+key = 344 key = 2422 key = 2467 
+
+in leaf node feedbackTuple.newPid = 64
+insert pageNo = 64, key = 344
+non-leaf node before insert, level = 1
+x = 0, Pid = 44, key = 1, x = 1, Pid = 21, key = 1, Pid = 26
+
+non-leaf node after insert
+x = 0, Pid = 44, key = 1, x = 1, Pid = 21, key = 1, x = 2, Pid = 26, key = 344, Pid = 64
+
+key = 1356 inserted
+show data in the leaf node before split
+key = 12 key = 245 key = 1308 key = 1400 
+
+show data in the leaf node after split in page 1
+key = 12 key = 245 
+
+show data in the leaf node after split in page 2
+key = 1308 key = 1356 key = 1400 
+
+in leaf node feedbackTuple.newPid = 65
+insert pageNo = 65, key = 1308
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 1454, x = 1, Pid = 17, key = 1, x = 2, Pid = 47, key = 1, Pid = 34
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 1308, x = 1, Pid = 65, key = 1454, x = 2, Pid = 17, key = 1, x = 3, Pid = 47, key = 1, Pid = 34
+
+key = 2472 inserted
+show leaf node after key insertion
+2257 2269 2365 2472 
+
+key = 2306 inserted
+show data in the leaf node before split
+key = 2257 key = 2269 key = 2365 key = 2472 
+
+show data in the leaf node after split in page 1
+key = 2257 key = 2269 
+
+show data in the leaf node after split in page 2
+key = 2306 key = 2365 key = 2472 
+
+in leaf node feedbackTuple.newPid = 66
+insert pageNo = 66, key = 2306
+non-leaf node before insert, level = 1
+x = 0, Pid = 62, key = 1804, x = 1, Pid = 58, key = 2257, Pid = 60
+
+non-leaf node after insert
+x = 0, Pid = 62, key = 1804, x = 1, Pid = 58, key = 2257, x = 2, Pid = 60, key = 2306, Pid = 66
+
+key = 2190 inserted
+show data in the leaf node before split
+key = 1804 key = 1844 key = 1952 key = 2008 
+
+show data in the leaf node after split in page 1
+key = 1804 key = 1844 
+
+show data in the leaf node after split in page 2
+key = 1952 key = 2008 key = 2190 
+
+in leaf node feedbackTuple.newPid = 67
+insert pageNo = 67, key = 1952
+non-leaf node before insert, level = 1
+x = 0, Pid = 62, key = 1804, x = 1, Pid = 58, key = 2257, x = 2, Pid = 60, key = 2306, Pid = 66
+
+non-leaf node after insert
+x = 0, Pid = 62, key = 1804, x = 1, Pid = 58, key = 1952, x = 2, Pid = 67, key = 2257, x = 3, Pid = 60, key = 2306, Pid = 66
+
+key = 4213 inserted
+show leaf node after key insertion
+4073 4140 4200 4213 
+
+key = 1812 inserted
+show leaf node after key insertion
+1804 1812 1844 
+
+key = 380 inserted
+show leaf node after key insertion
+356 380 424 472 
+
+key = 3930 inserted
+show leaf node after key insertion
+3903 3918 3930 3968 
+
+key = 1870 inserted
+show leaf node after key insertion
+1804 1812 1844 1870 
+
+key = 2442 inserted
+show leaf node after key insertion
+2306 2365 2442 2472 
+
+key = 887 inserted
+show data in the leaf node before split
+key = 774 key = 813 key = 847 key = 877 
+
+show data in the leaf node after split in page 1
+key = 774 key = 813 
+
+show data in the leaf node after split in page 2
+key = 847 key = 877 key = 887 
+
+in leaf node feedbackTuple.newPid = 68
+insert pageNo = 68, key = 847
+non-leaf node before insert, level = 1
+x = 0, Pid = 55, key = 919, x = 1, Pid = 32, key = 987, Pid = 45
+
+non-leaf node after insert
+x = 0, Pid = 55, key = 847, x = 1, Pid = 68, key = 919, x = 2, Pid = 32, key = 987, Pid = 45
+
+key = 1831 inserted
+show data in the leaf node before split
+key = 1804 key = 1812 key = 1844 key = 1870 
+
+show data in the leaf node after split in page 1
+key = 1804 key = 1812 
+
+show data in the leaf node after split in page 2
+key = 1831 key = 1844 key = 1870 
+
+in leaf node feedbackTuple.newPid = 69
+insert pageNo = 69, key = 1831
+non-leaf node before insert, level = 1
+x = 0, Pid = 62, key = 1804, x = 1, Pid = 58, key = 1952, x = 2, Pid = 67, key = 2257, x = 3, Pid = 60, key = 2306, Pid = 66
+
+non-leaf node after insert
+x = 0, Pid = 62, key = 1804, x = 1, Pid = 58, key = 1831, x = 2, Pid = 69, key = 1952, x = 3, Pid = 67, key = 2257, x = 4, Pid = 60, key = 2306, Pid = 66
+
+key = 2704 inserted
+show data in the leaf node before split
+key = 2604 key = 2621 key = 2661 key = 2750 
+
+show data in the leaf node after split in page 1
+key = 2604 key = 2621 
+
+show data in the leaf node after split in page 2
+key = 2661 key = 2704 key = 2750 
+
+in leaf node feedbackTuple.newPid = 70
+insert pageNo = 70, key = 2661
+non-leaf node before insert, level = 1
+x = 0, Pid = 42, key = 2604, x = 1, Pid = 53, key = 2751, x = 2, Pid = 19, key = 2838, x = 3, Pid = 24, key = 2889, Pid = 50
+
+non-leaf node after insert
+x = 0, Pid = 42, key = 2604, x = 1, Pid = 53, key = 2661, x = 2, Pid = 70, key = 2751, x = 3, Pid = 19, key = 2838, x = 4, Pid = 24, key = 2889, Pid = 50
+
+key = 2859 inserted
+show leaf node after key insertion
+2838 2855 2859 
+
+key = 3364 inserted
+show data in the leaf node before split
+key = 3255 key = 3290 key = 3294 key = 3335 
+
+show data in the leaf node after split in page 1
+key = 3255 key = 3290 
+
+show data in the leaf node after split in page 2
+key = 3294 key = 3335 key = 3364 
+
+in leaf node feedbackTuple.newPid = 71
+insert pageNo = 71, key = 3294
+non-leaf node before insert, level = 1
+x = 0, Pid = 5, key = 3015, x = 1, Pid = 49, key = 3255, x = 2, Pid = 16, key = 3390, x = 3, Pid = 7, key = 3437, Pid = 29
+
+non-leaf node after insert
+x = 0, Pid = 5, key = 3015, x = 1, Pid = 49, key = 3255, x = 2, Pid = 16, key = 3294, x = 3, Pid = 71, key = 3390, x = 4, Pid = 7, key = 3437, Pid = 29
+
+key = 2512 inserted
+show leaf node after key insertion
+2500 2512 2592 
+
+key = 3171 inserted
+show data in the leaf node before split
+key = 3015 key = 3129 key = 3131 key = 3132 
+
+show data in the leaf node after split in page 1
+key = 3015 key = 3129 
+
+show data in the leaf node after split in page 2
+key = 3131 key = 3132 key = 3171 
+
+in leaf node feedbackTuple.newPid = 72
+insert split pageNo = 72, key = 3131
+non-leaf node before insert split, level = 1
+x = 0, Pid = 5, key = 3015, x = 1, Pid = 49, key = 3255, x = 2, Pid = 16, key = 3294, x = 3, Pid = 71, key = 3390, x = 4, Pid = 7, key = 3437, Pid = 29
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 5, key = 3015, x = 1, Pid = 49, key = 3131, x = 2, Pid = 72, key = 3255, Pid = 16
+
+non-leaf node (new) after insert split
+x = 0, Pid = 71, key = 3390, x = 1, Pid = 7, key = 3437, Pid = 29
+in non-leaf node feedbackTuple.newPid = 73
+
+insert pageNo = 73, key = 3294
+non-leaf node before insert, level = 0
+x = 0, Pid = 10, key = 3575, x = 1, Pid = 36, key = 4216, Pid = 28
+
+non-leaf node after insert
+x = 0, Pid = 10, key = 3294, x = 1, Pid = 73, key = 3575, x = 2, Pid = 36, key = 4216, Pid = 28
+
+key = 4924 inserted
+show data in the leaf node before split
+key = 4772 key = 4805 key = 4877 key = 4967 
+
+show data in the leaf node after split in page 1
+key = 4772 key = 4805 
+
+show data in the leaf node after split in page 2
+key = 4877 key = 4924 key = 4967 
+
+in leaf node feedbackTuple.newPid = 74
+insert pageNo = 74, key = 4877
+non-leaf node before insert, level = 1
+x = 0, Pid = 8, key = 4422, x = 1, Pid = 39, key = 4541, x = 2, Pid = 12, key = 4577, x = 3, Pid = 61, key = 4772, Pid = 27
+
+non-leaf node after insert
+x = 0, Pid = 8, key = 4422, x = 1, Pid = 39, key = 4541, x = 2, Pid = 12, key = 4577, x = 3, Pid = 61, key = 4772, x = 4, Pid = 27, key = 4877, Pid = 74
+
+key = 1595 inserted
+show leaf node after key insertion
+1488 1560 1595 
+
+key = 4621 inserted
+show data in the leaf node before split
+key = 4577 key = 4641 key = 4667 key = 4758 
+
+show data in the leaf node after split in page 1
+key = 4577 key = 4621 
+
+show data in the leaf node after split in page 2
+key = 4641 key = 4667 key = 4758 
+
+in leaf node feedbackTuple.newPid = 75
+insert split pageNo = 75, key = 4641
+non-leaf node before insert split, level = 1
+x = 0, Pid = 8, key = 4422, x = 1, Pid = 39, key = 4541, x = 2, Pid = 12, key = 4577, x = 3, Pid = 61, key = 4772, x = 4, Pid = 27, key = 4877, Pid = 74
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 8, key = 4422, x = 1, Pid = 39, key = 4541, x = 2, Pid = 12, key = 4577, Pid = 61
+
+non-leaf node (new) after insert split
+x = 0, Pid = 75, key = 4772, x = 1, Pid = 27, key = 4877, Pid = 74
+in non-leaf node feedbackTuple.newPid = 76
+
+insert pageNo = 76, key = 4641
+non-leaf node before insert, level = 0
+x = 0, Pid = 10, key = 3294, x = 1, Pid = 73, key = 3575, x = 2, Pid = 36, key = 4216, Pid = 28
+
+non-leaf node after insert
+x = 0, Pid = 10, key = 3294, x = 1, Pid = 73, key = 3575, x = 2, Pid = 36, key = 4216, x = 3, Pid = 28, key = 4641, Pid = 76
+
+key = 1750 inserted
+show leaf node after key insertion
+1669 1750 1784 1797 
+
+key = 1802 inserted
+show data in the leaf node before split
+key = 1669 key = 1750 key = 1784 key = 1797 
+
+show data in the leaf node after split in page 1
+key = 1669 key = 1750 
+
+show data in the leaf node after split in page 2
+key = 1784 key = 1797 key = 1802 
+
+in leaf node feedbackTuple.newPid = 77
+insert split pageNo = 77, key = 1784
+non-leaf node before insert split, level = 1
+x = 0, Pid = 62, key = 1804, x = 1, Pid = 58, key = 1831, x = 2, Pid = 69, key = 1952, x = 3, Pid = 67, key = 2257, x = 4, Pid = 60, key = 2306, Pid = 66
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 2, key = 1802, x = 1, Pid = 33, key = 1, x = 2, Pid = 58, key = 1, Pid = 69
+
+non-leaf node (new) after insert split
+x = 0, Pid = 67, key = 1, x = 1, Pid = 60, key = 1, Pid = 66
+in non-leaf node feedbackTuple.newPid = 78
+
+insert pageNo = 78, key = 1
+non-leaf node before insert, level = 0
+x = 0, Pid = 56, key = 1163, x = 1, Pid = 23, key = 1669, x = 2, Pid = 63, key = 2500, Pid = 43
+
+non-leaf node after insert
+x = 0, Pid = 56, key = 1, x = 1, Pid = 78, key = 1163, x = 2, Pid = 23, key = 1669, x = 3, Pid = 63, key = 2500, Pid = 43
+
+key = 3665 inserted
+show data in the leaf node before split
+key = 3590 key = 3597 key = 3745 key = 3877 
+
+show data in the leaf node after split in page 1
+key = 3590 key = 3597 
+
+show data in the leaf node after split in page 2
+key = 3665 key = 3745 key = 3877 
+
+in leaf node feedbackTuple.newPid = 79
+insert pageNo = 79, key = 3665
+non-leaf node before insert, level = 1
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3903, x = 2, Pid = 46, key = 3976, x = 3, Pid = 30, key = 4073, Pid = 54
+
+non-leaf node after insert
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3665, x = 2, Pid = 79, key = 3903, x = 3, Pid = 46, key = 3976, x = 4, Pid = 30, key = 4073, Pid = 54
+
+key = 4134 inserted
+show data in the leaf node before split
+key = 4073 key = 4140 key = 4200 key = 4213 
+
+show data in the leaf node after split in page 1
+key = 4073 key = 4134 
+
+show data in the leaf node after split in page 2
+key = 4140 key = 4200 key = 4213 
+
+in leaf node feedbackTuple.newPid = 80
+insert split pageNo = 80, key = 4140
+non-leaf node before insert split, level = 1
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3665, x = 2, Pid = 79, key = 3903, x = 3, Pid = 46, key = 3976, x = 4, Pid = 30, key = 4073, Pid = 54
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3665, x = 2, Pid = 79, key = 3903, Pid = 46
+
+non-leaf node (new) after insert split
+x = 0, Pid = 30, key = 4073, x = 1, Pid = 54, key = 4140, Pid = 80
+in non-leaf node feedbackTuple.newPid = 81
+
+insert pageNo = 81, key = 3976
+non-leaf node before insert, level = 0
+x = 0, Pid = 10, key = 3294, x = 1, Pid = 73, key = 3575, x = 2, Pid = 36, key = 4216, x = 3, Pid = 28, key = 4641, Pid = 76
+
+non-leaf node after insert
+x = 0, Pid = 10, key = 3294, x = 1, Pid = 73, key = 3575, x = 2, Pid = 36, key = 3976, x = 3, Pid = 81, key = 4216, x = 4, Pid = 28, key = 4641, Pid = 76
+
+key = 129 inserted
+show leaf node after key insertion
+129 138 237 
+
+key = 359 inserted
+show data in the leaf node before split
+key = 356 key = 380 key = 424 key = 472 
+
+show data in the leaf node after split in page 1
+key = 356 key = 359 
+
+show data in the leaf node after split in page 2
+key = 380 key = 424 key = 472 
+
+in leaf node feedbackTuple.newPid = 82
+insert pageNo = 82, key = 380
+non-leaf node before insert, level = 1
+x = 0, Pid = 31, key = 517, x = 1, Pid = 41, key = 622, x = 2, Pid = 59, key = 697, x = 3, Pid = 20, key = 716, Pid = 48
+
+non-leaf node after insert
+x = 0, Pid = 31, key = 380, x = 1, Pid = 82, key = 517, x = 2, Pid = 41, key = 622, x = 3, Pid = 59, key = 697, x = 4, Pid = 20, key = 716, Pid = 48
+
+key = 728 inserted
+show leaf node after key insertion
+716 728 735 
+
+key = 1897 inserted
+show leaf node after key insertion
+1831 1844 1870 1897 
+
+key = 316 inserted
+show leaf node after key insertion
+129 138 237 316 
+
+key = 3347 inserted
+show leaf node after key insertion
+3294 3335 3347 3364 
+
+key = 2696 inserted
+show leaf node after key insertion
+2661 2696 2704 2750 
+
+key = 2685 inserted
+show data in the leaf node before split
+key = 2661 key = 2696 key = 2704 key = 2750 
+
+show data in the leaf node after split in page 1
+key = 2661 key = 2685 
+
+show data in the leaf node after split in page 2
+key = 2696 key = 2704 key = 2750 
+
+in leaf node feedbackTuple.newPid = 83
+insert split pageNo = 83, key = 2696
+non-leaf node before insert split, level = 1
+x = 0, Pid = 42, key = 2604, x = 1, Pid = 53, key = 2661, x = 2, Pid = 70, key = 2751, x = 3, Pid = 19, key = 2838, x = 4, Pid = 24, key = 2889, Pid = 50
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 42, key = 2604, x = 1, Pid = 53, key = 2661, x = 2, Pid = 70, key = 2696, Pid = 83
+
+non-leaf node (new) after insert split
+x = 0, Pid = 19, key = 2838, x = 1, Pid = 24, key = 2889, Pid = 50
+in non-leaf node feedbackTuple.newPid = 84
+
+insert pageNo = 84, key = 2751
+non-leaf node before insert, level = 0
+x = 0, Pid = 56, key = 1, x = 1, Pid = 78, key = 1163, x = 2, Pid = 23, key = 1669, x = 3, Pid = 63, key = 2500, Pid = 43
+
+non-leaf node after insert
+x = 0, Pid = 56, key = 1, x = 1, Pid = 78, key = 1163, x = 2, Pid = 23, key = 1669, x = 3, Pid = 63, key = 2500, x = 4, Pid = 43, key = 2751, Pid = 84
+
+key = 4669 inserted
+show leaf node after key insertion
+4641 4667 4669 4758 
+
+key = 4452 inserted
+show leaf node after key insertion
+4422 4452 4487 4517 
+
+key = 294 inserted
+show data in the leaf node before split
+key = 129 key = 138 key = 237 key = 316 
+
+show data in the leaf node after split in page 1
+key = 129 key = 138 
+
+show data in the leaf node after split in page 2
+key = 237 key = 294 key = 316 
+
+in leaf node feedbackTuple.newPid = 85
+insert pageNo = 85, key = 237
+non-leaf node before insert, level = 1
+x = 0, Pid = 44, key = 1, x = 1, Pid = 21, key = 1, x = 2, Pid = 26, key = 344, Pid = 64
+
+non-leaf node after insert
+x = 0, Pid = 44, key = 1, x = 1, Pid = 21, key = 1, x = 2, Pid = 26, key = 237, x = 3, Pid = 85, key = 344, Pid = 64
+
+key = 485 inserted
+show leaf node after key insertion
+380 424 472 485 
+
+key = 2040 inserted
+show data in the leaf node before split
+key = 1831 key = 1844 key = 1870 key = 1897 
+
+show data in the leaf node after split in page 1
+key = 1831 key = 1844 
+
+show data in the leaf node after split in page 2
+key = 1870 key = 1897 key = 2040 
+
+in leaf node feedbackTuple.newPid = 86
+insert pageNo = 86, key = 1870
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 1802, x = 1, Pid = 33, key = 1, x = 2, Pid = 58, key = 1, Pid = 69
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 1802, x = 1, Pid = 33, key = 1, x = 2, Pid = 58, key = 1, x = 3, Pid = 69, key = 1870, Pid = 86
+
+key = 1115 inserted
+show data in the leaf node before split
+key = 2306 key = 2365 key = 2442 key = 2472 
+
+show data in the leaf node after split in page 1
+key = 1115 key = 2306 
+
+show data in the leaf node after split in page 2
+key = 2365 key = 2442 key = 2472 
+
+in leaf node feedbackTuple.newPid = 87
+insert pageNo = 87, key = 2365
+non-leaf node before insert, level = 1
+x = 0, Pid = 67, key = 1, x = 1, Pid = 60, key = 1, Pid = 66
+
+non-leaf node after insert
+x = 0, Pid = 67, key = 1, x = 1, Pid = 60, key = 1, x = 2, Pid = 66, key = 2365, Pid = 87
+
+key = 1622 inserted
+show leaf node after key insertion
+1488 1560 1595 1622 
+
+key = 4042 inserted
+show leaf node after key insertion
+3976 4035 4042 
+
+key = 1925 inserted
+show leaf node after key insertion
+1870 1897 1925 2040 
+
+key = 4070 inserted
+show leaf node after key insertion
+3976 4035 4042 4070 
+
+key = 2495 inserted
+show data in the leaf node before split
+key = 1870 key = 1897 key = 1925 key = 2040 
+
+show data in the leaf node after split in page 1
+key = 1870 key = 1897 
+
+show data in the leaf node after split in page 2
+key = 1925 key = 2040 key = 2495 
+
+in leaf node feedbackTuple.newPid = 88
+insert pageNo = 88, key = 1925
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 1802, x = 1, Pid = 33, key = 1, x = 2, Pid = 58, key = 1, x = 3, Pid = 69, key = 1870, Pid = 86
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 1802, x = 1, Pid = 33, key = 1, x = 2, Pid = 58, key = 1, x = 3, Pid = 69, key = 1870, x = 4, Pid = 86, key = 1925, Pid = 88
+
+key = 4079 inserted
+show leaf node after key insertion
+4073 4079 4134 
+
+key = 4519 inserted
+show data in the leaf node before split
+key = 4422 key = 4452 key = 4487 key = 4517 
+
+show data in the leaf node after split in page 1
+key = 4422 key = 4452 
+
+show data in the leaf node after split in page 2
+key = 4487 key = 4517 key = 4519 
+
+in leaf node feedbackTuple.newPid = 89
+insert pageNo = 89, key = 4487
+non-leaf node before insert, level = 1
+x = 0, Pid = 8, key = 4422, x = 1, Pid = 39, key = 4541, x = 2, Pid = 12, key = 4577, Pid = 61
+
+non-leaf node after insert
+x = 0, Pid = 8, key = 4422, x = 1, Pid = 39, key = 4487, x = 2, Pid = 89, key = 4541, x = 3, Pid = 12, key = 4577, Pid = 61
+
+key = 2579 inserted
+show leaf node after key insertion
+2500 2512 2579 2592 
+
+key = 3880 inserted
+show leaf node after key insertion
+3665 3745 3877 3880 
+
+key = 1256 inserted
+show leaf node after key insertion
+12 245 1256 
+
+key = 963 inserted
+show leaf node after key insertion
+963 1115 2306 
+
+key = 1047 inserted
+show leaf node after key insertion
+963 1047 1115 2306 
+
+key = 4170 inserted
+show leaf node after key insertion
+4140 4170 4200 4213 
+
+key = 1264 inserted
+show leaf node after key insertion
+12 245 1256 1264 
+
+key = 2207 inserted
+show leaf node after key insertion
+1925 2040 2207 2495 
+
+key = 1976 inserted
+show data in the leaf node before split
+key = 1925 key = 2040 key = 2207 key = 2495 
+
+show data in the leaf node after split in page 1
+key = 1925 key = 1976 
+
+show data in the leaf node after split in page 2
+key = 2040 key = 2207 key = 2495 
+
+in leaf node feedbackTuple.newPid = 90
+insert split pageNo = 90, key = 2040
+non-leaf node before insert split, level = 1
+x = 0, Pid = 2, key = 1802, x = 1, Pid = 33, key = 1, x = 2, Pid = 58, key = 1, x = 3, Pid = 69, key = 1870, x = 4, Pid = 86, key = 1925, Pid = 88
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 2, key = 1802, x = 1, Pid = 33, key = 1, x = 2, Pid = 58, key = 1, Pid = 69
+
+non-leaf node (new) after insert split
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 2040, Pid = 90
+in non-leaf node feedbackTuple.newPid = 91
+
+insert split pageNo = 91, key = 1870
+non-leaf node before insert split, level = 0
+x = 0, Pid = 56, key = 1, x = 1, Pid = 78, key = 1163, x = 2, Pid = 23, key = 1669, x = 3, Pid = 63, key = 2500, x = 4, Pid = 43, key = 2751, Pid = 84
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 56, key = 1, x = 1, Pid = 78, key = 1163, x = 2, Pid = 23, key = 1669, Pid = 63
+
+non-leaf node (new) after insert split
+x = 0, Pid = 91, key = 2500, x = 1, Pid = 43, key = 2751, Pid = 84
+in non-leaf node feedbackTuple.newPid = 92
+
+insert pageNo = 92, key = 1870
+non-leaf node before insert, level = 0
+x = 0, Pid = 11, key = 774, x = 1, Pid = 57, key = 2995, Pid = 37
+
+non-leaf node after insert
+x = 0, Pid = 11, key = 774, x = 1, Pid = 57, key = 1870, x = 2, Pid = 92, key = 2995, Pid = 37
+
+key = 4048 inserted
+show data in the leaf node before split
+key = 3976 key = 4035 key = 4042 key = 4070 
+
+show data in the leaf node after split in page 1
+key = 3976 key = 4035 
+
+show data in the leaf node after split in page 2
+key = 4042 key = 4048 key = 4070 
+
+in leaf node feedbackTuple.newPid = 93
+insert pageNo = 93, key = 4042
+non-leaf node before insert, level = 1
+x = 0, Pid = 30, key = 4073, x = 1, Pid = 54, key = 4140, Pid = 80
+
+non-leaf node after insert
+x = 0, Pid = 30, key = 4042, x = 1, Pid = 93, key = 4073, x = 2, Pid = 54, key = 4140, Pid = 80
+
+key = 3497 inserted
+show data in the leaf node before split
+key = 3437 key = 3446 key = 3515 key = 3524 
+
+show data in the leaf node after split in page 1
+key = 3437 key = 3446 
+
+show data in the leaf node after split in page 2
+key = 3497 key = 3515 key = 3524 
+
+in leaf node feedbackTuple.newPid = 94
+insert pageNo = 94, key = 3497
+non-leaf node before insert, level = 1
+x = 0, Pid = 71, key = 3390, x = 1, Pid = 7, key = 3437, Pid = 29
+
+non-leaf node after insert
+x = 0, Pid = 71, key = 3390, x = 1, Pid = 7, key = 3437, x = 2, Pid = 29, key = 3497, Pid = 94
+
+key = 2347 inserted
+show leaf node after key insertion
+2040 2207 2347 2495 
+
+key = 4883 inserted
+show leaf node after key insertion
+4877 4883 4924 4967 
+
+key = 3243 inserted
+show leaf node after key insertion
+3131 3132 3171 3243 
+
+key = 4100 inserted
+show leaf node after key insertion
+4073 4079 4100 4134 
+
+key = 1621 inserted
+show data in the leaf node before split
+key = 1488 key = 1560 key = 1595 key = 1622 
+
+show data in the leaf node after split in page 1
+key = 1488 key = 1560 
+
+show data in the leaf node after split in page 2
+key = 1595 key = 1621 key = 1622 
+
+in leaf node feedbackTuple.newPid = 95
+insert pageNo = 95, key = 1595
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 1308, x = 1, Pid = 65, key = 1454, x = 2, Pid = 17, key = 1, x = 3, Pid = 47, key = 1, Pid = 34
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 1308, x = 1, Pid = 65, key = 1454, x = 2, Pid = 17, key = 1, x = 3, Pid = 47, key = 1, x = 4, Pid = 34, key = 1595, Pid = 95
+
+key = 4280 inserted
+show data in the leaf node before split
+key = 4216 key = 4298 key = 4351 key = 4383 
+
+show data in the leaf node after split in page 1
+key = 4216 key = 4280 
+
+show data in the leaf node after split in page 2
+key = 4298 key = 4351 key = 4383 
+
+in leaf node feedbackTuple.newPid = 96
+insert pageNo = 96, key = 4298
+non-leaf node before insert, level = 1
+x = 0, Pid = 8, key = 4422, x = 1, Pid = 39, key = 4487, x = 2, Pid = 89, key = 4541, x = 3, Pid = 12, key = 4577, Pid = 61
+
+non-leaf node after insert
+x = 0, Pid = 8, key = 4298, x = 1, Pid = 96, key = 4422, x = 2, Pid = 39, key = 4487, x = 3, Pid = 89, key = 4541, x = 4, Pid = 12, key = 4577, Pid = 61
+
+key = 2617 inserted
+show leaf node after key insertion
+2604 2617 2621 
+
+key = 3928 inserted
+show data in the leaf node before split
+key = 3903 key = 3918 key = 3930 key = 3968 
+
+show data in the leaf node after split in page 1
+key = 3903 key = 3918 
+
+show data in the leaf node after split in page 2
+key = 3928 key = 3930 key = 3968 
+
+in leaf node feedbackTuple.newPid = 97
+insert pageNo = 97, key = 3928
+non-leaf node before insert, level = 1
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3665, x = 2, Pid = 79, key = 3903, Pid = 46
+
+non-leaf node after insert
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3665, x = 2, Pid = 79, key = 3903, x = 3, Pid = 46, key = 3928, Pid = 97
+
+key = 4585 inserted
+show leaf node after key insertion
+4577 4585 4621 
+
+key = 1329 inserted
+show leaf node after key insertion
+1308 1329 1356 1400 
+
+key = 2613 inserted
+show leaf node after key insertion
+2604 2613 2617 2621 
+
+key = 4820 inserted
+show leaf node after key insertion
+4772 4805 4820 
+
+key = 1716 inserted
+show data in the leaf node before split
+key = 12 key = 245 key = 1256 key = 1264 
+
+show data in the leaf node after split in page 1
+key = 12 key = 245 
+
+show data in the leaf node after split in page 2
+key = 1256 key = 1264 key = 1716 
+
+in leaf node feedbackTuple.newPid = 98
+insert pageNo = 98, key = 1256
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 1802, x = 1, Pid = 33, key = 1, x = 2, Pid = 58, key = 1, Pid = 69
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 1256, x = 1, Pid = 98, key = 1802, x = 2, Pid = 33, key = 1, x = 3, Pid = 58, key = 1, Pid = 69
+
+key = 1468 inserted
+show leaf node after key insertion
+1468 1488 1560 
+
+key = 562 inserted
+show leaf node after key insertion
+517 521 562 
+
+key = 4524 inserted
+show leaf node after key insertion
+4487 4517 4519 4524 
+
+key = 1366 inserted
+show data in the leaf node before split
+key = 1308 key = 1329 key = 1356 key = 1400 
+
+show data in the leaf node after split in page 1
+key = 1308 key = 1329 
+
+show data in the leaf node after split in page 2
+key = 1356 key = 1366 key = 1400 
+
+in leaf node feedbackTuple.newPid = 99
+insert split pageNo = 99, key = 1356
+non-leaf node before insert split, level = 1
+x = 0, Pid = 2, key = 1308, x = 1, Pid = 65, key = 1454, x = 2, Pid = 17, key = 1, x = 3, Pid = 47, key = 1, x = 4, Pid = 34, key = 1595, Pid = 95
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 2, key = 1308, x = 1, Pid = 65, key = 1356, x = 2, Pid = 99, key = 1454, Pid = 17
+
+non-leaf node (new) after insert split
+x = 0, Pid = 47, key = 1, x = 1, Pid = 34, key = 1595, Pid = 95
+in non-leaf node feedbackTuple.newPid = 100
+
+insert pageNo = 100, key = 1
+non-leaf node before insert, level = 0
+x = 0, Pid = 56, key = 1, x = 1, Pid = 78, key = 1163, x = 2, Pid = 23, key = 1669, Pid = 63
+
+non-leaf node after insert
+x = 0, Pid = 56, key = 1, x = 1, Pid = 78, key = 1, x = 2, Pid = 100, key = 1163, x = 3, Pid = 23, key = 1669, Pid = 63
+
+key = 4090 inserted
+show data in the leaf node before split
+key = 4073 key = 4079 key = 4100 key = 4134 
+
+show data in the leaf node after split in page 1
+key = 4073 key = 4079 
+
+show data in the leaf node after split in page 2
+key = 4090 key = 4100 key = 4134 
+
+in leaf node feedbackTuple.newPid = 101
+insert pageNo = 101, key = 4090
+non-leaf node before insert, level = 1
+x = 0, Pid = 30, key = 4042, x = 1, Pid = 93, key = 4073, x = 2, Pid = 54, key = 4140, Pid = 80
+
+non-leaf node after insert
+x = 0, Pid = 30, key = 4042, x = 1, Pid = 93, key = 4073, x = 2, Pid = 54, key = 4090, x = 3, Pid = 101, key = 4140, Pid = 80
+
+key = 3110 inserted
+show leaf node after key insertion
+3015 3110 3129 
+
+key = 210 inserted
+show leaf node after key insertion
+129 138 210 
+
+key = 62 inserted
+show leaf node after key insertion
+62 129 138 210 
+
+key = 1276 inserted
+show leaf node after key insertion
+12 245 1276 
+
+key = 1265 inserted
+show leaf node after key insertion
+12 245 1265 1276 
+
+key = 4127 inserted
+show leaf node after key insertion
+4090 4100 4127 4134 
+
+key = 2648 inserted
+show data in the leaf node before split
+key = 2604 key = 2613 key = 2617 key = 2621 
+
+show data in the leaf node after split in page 1
+key = 2604 key = 2613 
+
+show data in the leaf node after split in page 2
+key = 2617 key = 2621 key = 2648 
+
+in leaf node feedbackTuple.newPid = 102
+insert pageNo = 102, key = 2617
+non-leaf node before insert, level = 1
+x = 0, Pid = 42, key = 2604, x = 1, Pid = 53, key = 2661, x = 2, Pid = 70, key = 2696, Pid = 83
+
+non-leaf node after insert
+x = 0, Pid = 42, key = 2604, x = 1, Pid = 53, key = 2617, x = 2, Pid = 102, key = 2661, x = 3, Pid = 70, key = 2696, Pid = 83
+
+key = 3854 inserted
+show data in the leaf node before split
+key = 3665 key = 3745 key = 3877 key = 3880 
+
+show data in the leaf node after split in page 1
+key = 3665 key = 3745 
+
+show data in the leaf node after split in page 2
+key = 3854 key = 3877 key = 3880 
+
+in leaf node feedbackTuple.newPid = 103
+insert pageNo = 103, key = 3854
+non-leaf node before insert, level = 1
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3665, x = 2, Pid = 79, key = 3903, x = 3, Pid = 46, key = 3928, Pid = 97
+
+non-leaf node after insert
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3665, x = 2, Pid = 79, key = 3854, x = 3, Pid = 103, key = 3903, x = 4, Pid = 46, key = 3928, Pid = 97
+
+key = 1147 inserted
+show leaf node after key insertion
+1147 1468 1488 1560 
+
+key = 4179 inserted
+show data in the leaf node before split
+key = 4140 key = 4170 key = 4200 key = 4213 
+
+show data in the leaf node after split in page 1
+key = 4140 key = 4170 
+
+show data in the leaf node after split in page 2
+key = 4179 key = 4200 key = 4213 
+
+in leaf node feedbackTuple.newPid = 104
+insert pageNo = 104, key = 4179
+non-leaf node before insert, level = 1
+x = 0, Pid = 30, key = 4042, x = 1, Pid = 93, key = 4073, x = 2, Pid = 54, key = 4090, x = 3, Pid = 101, key = 4140, Pid = 80
+
+non-leaf node after insert
+x = 0, Pid = 30, key = 4042, x = 1, Pid = 93, key = 4073, x = 2, Pid = 54, key = 4090, x = 3, Pid = 101, key = 4140, x = 4, Pid = 80, key = 4179, Pid = 104
+
+key = 2170 inserted
+show data in the leaf node before split
+key = 2040 key = 2207 key = 2347 key = 2495 
+
+show data in the leaf node after split in page 1
+key = 2040 key = 2170 
+
+show data in the leaf node after split in page 2
+key = 2207 key = 2347 key = 2495 
+
+in leaf node feedbackTuple.newPid = 105
+insert pageNo = 105, key = 2207
+non-leaf node before insert, level = 1
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 2040, Pid = 90
+
+non-leaf node after insert
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 2040, x = 2, Pid = 90, key = 2207, Pid = 105
+
+key = 4222 inserted
+show leaf node after key insertion
+4216 4222 4280 
+
+key = 4640 inserted
+show leaf node after key insertion
+4577 4585 4621 4640 
+
+key = 3653 inserted
+show leaf node after key insertion
+3590 3597 3653 
+
+key = 1667 inserted
+show leaf node after key insertion
+286 306 307 1667 
+
+key = 231 inserted
+show data in the leaf node before split
+key = 62 key = 129 key = 138 key = 210 
+
+show data in the leaf node after split in page 1
+key = 62 key = 129 
+
+show data in the leaf node after split in page 2
+key = 138 key = 210 key = 231 
+
+in leaf node feedbackTuple.newPid = 106
+insert pageNo = 106, key = 138
+non-leaf node before insert, level = 1
+x = 0, Pid = 44, key = 1, x = 1, Pid = 21, key = 1, x = 2, Pid = 26, key = 237, x = 3, Pid = 85, key = 344, Pid = 64
+
+non-leaf node after insert
+x = 0, Pid = 44, key = 1, x = 1, Pid = 21, key = 1, x = 2, Pid = 26, key = 138, x = 3, Pid = 106, key = 237, x = 4, Pid = 85, key = 344, Pid = 64
+
+key = 4699 inserted
+show data in the leaf node before split
+key = 4641 key = 4667 key = 4669 key = 4758 
+
+show data in the leaf node after split in page 1
+key = 4641 key = 4667 
+
+show data in the leaf node after split in page 2
+key = 4669 key = 4699 key = 4758 
+
+in leaf node feedbackTuple.newPid = 107
+insert pageNo = 107, key = 4669
+non-leaf node before insert, level = 1
+x = 0, Pid = 75, key = 4772, x = 1, Pid = 27, key = 4877, Pid = 74
+
+non-leaf node after insert
+x = 0, Pid = 75, key = 4669, x = 1, Pid = 107, key = 4772, x = 2, Pid = 27, key = 4877, Pid = 74
+
+key = 2466 inserted
+show leaf node after key insertion
+2207 2347 2466 2495 
+
+key = 2633 inserted
+show leaf node after key insertion
+2617 2621 2633 2648 
+
+key = 1702 inserted
+show leaf node after key insertion
+1256 1264 1702 1716 
+
+key = 3717 inserted
+show leaf node after key insertion
+3665 3717 3745 
+
+key = 3413 inserted
+show leaf node after key insertion
+3390 3404 3413 3427 
+
+key = 667 inserted
+show data in the leaf node before split
+key = 622 key = 626 key = 674 key = 684 
+
+show data in the leaf node after split in page 1
+key = 622 key = 626 
+
+show data in the leaf node after split in page 2
+key = 667 key = 674 key = 684 
+
+in leaf node feedbackTuple.newPid = 108
+insert split pageNo = 108, key = 667
+non-leaf node before insert split, level = 1
+x = 0, Pid = 31, key = 380, x = 1, Pid = 82, key = 517, x = 2, Pid = 41, key = 622, x = 3, Pid = 59, key = 697, x = 4, Pid = 20, key = 716, Pid = 48
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 31, key = 380, x = 1, Pid = 82, key = 517, x = 2, Pid = 41, key = 622, Pid = 59
+
+non-leaf node (new) after insert split
+x = 0, Pid = 108, key = 697, x = 1, Pid = 20, key = 716, Pid = 48
+in non-leaf node feedbackTuple.newPid = 109
+
+insert pageNo = 109, key = 667
+non-leaf node before insert, level = 0
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 1, x = 2, Pid = 52, key = 356, Pid = 33
+
+non-leaf node after insert
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 1, x = 2, Pid = 52, key = 356, x = 3, Pid = 33, key = 667, Pid = 109
+
+key = 3822 inserted
+show leaf node after key insertion
+3665 3717 3745 3822 
+
+key = 83 inserted
+show leaf node after key insertion
+62 83 129 
+
+key = 3280 inserted
+show leaf node after key insertion
+3255 3280 3290 
+
+key = 783 inserted
+show data in the leaf node before split
+key = 1147 key = 1468 key = 1488 key = 1560 
+
+show data in the leaf node after split in page 1
+key = 783 key = 1147 
+
+show data in the leaf node after split in page 2
+key = 1468 key = 1488 key = 1560 
+
+in leaf node feedbackTuple.newPid = 110
+insert pageNo = 110, key = 1468
+non-leaf node before insert, level = 1
+x = 0, Pid = 47, key = 1, x = 1, Pid = 34, key = 1595, Pid = 95
+
+non-leaf node after insert
+x = 0, Pid = 47, key = 1, x = 1, Pid = 34, key = 1468, x = 2, Pid = 110, key = 1595, Pid = 95
+
+key = 143 inserted
+show leaf node after key insertion
+138 143 210 231 
+
+key = 1471 inserted
+show data in the leaf node before split
+key = 286 key = 306 key = 307 key = 1667 
+
+show data in the leaf node after split in page 1
+key = 286 key = 306 
+
+show data in the leaf node after split in page 2
+key = 307 key = 1471 key = 1667 
+
+in leaf node feedbackTuple.newPid = 111
+insert pageNo = 111, key = 307
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 1308, x = 1, Pid = 65, key = 1356, x = 2, Pid = 99, key = 1454, Pid = 17
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 307, x = 1, Pid = 111, key = 1308, x = 2, Pid = 65, key = 1356, x = 3, Pid = 99, key = 1454, Pid = 17
+
+key = 4355 inserted
+show leaf node after key insertion
+4298 4351 4355 4383 
+
+key = 4639 inserted
+show data in the leaf node before split
+key = 4577 key = 4585 key = 4621 key = 4640 
+
+show data in the leaf node after split in page 1
+key = 4577 key = 4585 
+
+show data in the leaf node after split in page 2
+key = 4621 key = 4639 key = 4640 
+
+in leaf node feedbackTuple.newPid = 112
+insert split pageNo = 112, key = 4621
+non-leaf node before insert split, level = 1
+x = 0, Pid = 8, key = 4298, x = 1, Pid = 96, key = 4422, x = 2, Pid = 39, key = 4487, x = 3, Pid = 89, key = 4541, x = 4, Pid = 12, key = 4577, Pid = 61
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 8, key = 4298, x = 1, Pid = 96, key = 4422, x = 2, Pid = 39, key = 4487, Pid = 89
+
+non-leaf node (new) after insert split
+x = 0, Pid = 12, key = 4577, x = 1, Pid = 61, key = 4621, Pid = 112
+in non-leaf node feedbackTuple.newPid = 113
+
+insert split pageNo = 113, key = 4541
+non-leaf node before insert split, level = 0
+x = 0, Pid = 10, key = 3294, x = 1, Pid = 73, key = 3575, x = 2, Pid = 36, key = 3976, x = 3, Pid = 81, key = 4216, x = 4, Pid = 28, key = 4641, Pid = 76
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 10, key = 3294, x = 1, Pid = 73, key = 3575, x = 2, Pid = 36, key = 3976, Pid = 81
+
+non-leaf node (new) after insert split
+x = 0, Pid = 28, key = 4541, x = 1, Pid = 113, key = 4641, Pid = 76
+in non-leaf node feedbackTuple.newPid = 114
+
+insert pageNo = 114, key = 4216
+non-leaf node before insert, level = 0
+x = 0, Pid = 11, key = 774, x = 1, Pid = 57, key = 1870, x = 2, Pid = 92, key = 2995, Pid = 37
+
+non-leaf node after insert
+x = 0, Pid = 11, key = 774, x = 1, Pid = 57, key = 1870, x = 2, Pid = 92, key = 2995, x = 3, Pid = 37, key = 4216, Pid = 114
+
+key = 3905 inserted
+show leaf node after key insertion
+3903 3905 3918 
+
+key = 4290 inserted
+show leaf node after key insertion
+4216 4222 4280 4290 
+
+key = 4564 inserted
+show leaf node after key insertion
+4541 4542 4564 
+
+key = 4740 inserted
+show leaf node after key insertion
+4669 4699 4740 4758 
+
+key = 4256 inserted
+show data in the leaf node before split
+key = 4216 key = 4222 key = 4280 key = 4290 
+
+show data in the leaf node after split in page 1
+key = 4216 key = 4222 
+
+show data in the leaf node after split in page 2
+key = 4256 key = 4280 key = 4290 
+
+in leaf node feedbackTuple.newPid = 115
+insert pageNo = 115, key = 4256
+non-leaf node before insert, level = 1
+x = 0, Pid = 8, key = 4298, x = 1, Pid = 96, key = 4422, x = 2, Pid = 39, key = 4487, Pid = 89
+
+non-leaf node after insert
+x = 0, Pid = 8, key = 4256, x = 1, Pid = 115, key = 4298, x = 2, Pid = 96, key = 4422, x = 3, Pid = 39, key = 4487, Pid = 89
+
+key = 3725 inserted
+show data in the leaf node before split
+key = 3665 key = 3717 key = 3745 key = 3822 
+
+show data in the leaf node after split in page 1
+key = 3665 key = 3717 
+
+show data in the leaf node after split in page 2
+key = 3725 key = 3745 key = 3822 
+
+in leaf node feedbackTuple.newPid = 116
+insert split pageNo = 116, key = 3725
+non-leaf node before insert split, level = 1
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3665, x = 2, Pid = 79, key = 3854, x = 3, Pid = 103, key = 3903, x = 4, Pid = 46, key = 3928, Pid = 97
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3665, x = 2, Pid = 79, key = 3725, Pid = 116
+
+non-leaf node (new) after insert split
+x = 0, Pid = 103, key = 3903, x = 1, Pid = 46, key = 3928, Pid = 97
+in non-leaf node feedbackTuple.newPid = 117
+
+insert pageNo = 117, key = 3854
+non-leaf node before insert, level = 0
+x = 0, Pid = 10, key = 3294, x = 1, Pid = 73, key = 3575, x = 2, Pid = 36, key = 3976, Pid = 81
+
+non-leaf node after insert
+x = 0, Pid = 10, key = 3294, x = 1, Pid = 73, key = 3575, x = 2, Pid = 36, key = 3854, x = 3, Pid = 117, key = 3976, Pid = 81
+
+key = 4865 inserted
+show leaf node after key insertion
+4772 4805 4820 4865 
+
+key = 1472 inserted
+show leaf node after key insertion
+286 306 1472 
+
+key = 2022 inserted
+show leaf node after key insertion
+1925 1976 2022 
+
+key = 1243 inserted
+show leaf node after key insertion
+307 1243 1471 1667 
+
+key = 4888 inserted
+show data in the leaf node before split
+key = 4877 key = 4883 key = 4924 key = 4967 
+
+show data in the leaf node after split in page 1
+key = 4877 key = 4883 
+
+show data in the leaf node after split in page 2
+key = 4888 key = 4924 key = 4967 
+
+in leaf node feedbackTuple.newPid = 118
+insert pageNo = 118, key = 4888
+non-leaf node before insert, level = 1
+x = 0, Pid = 75, key = 4669, x = 1, Pid = 107, key = 4772, x = 2, Pid = 27, key = 4877, Pid = 74
+
+non-leaf node after insert
+x = 0, Pid = 75, key = 4669, x = 1, Pid = 107, key = 4772, x = 2, Pid = 27, key = 4877, x = 3, Pid = 74, key = 4888, Pid = 118
+
+key = 1843 inserted
+show leaf node after key insertion
+1831 1843 1844 
+
+key = 538 inserted
+show leaf node after key insertion
+517 521 538 562 
+
+key = 1743 inserted
+show data in the leaf node before split
+key = 1256 key = 1264 key = 1702 key = 1716 
+
+show data in the leaf node after split in page 1
+key = 1256 key = 1264 
+
+show data in the leaf node after split in page 2
+key = 1702 key = 1716 key = 1743 
+
+in leaf node feedbackTuple.newPid = 119
+insert pageNo = 119, key = 1702
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 1256, x = 1, Pid = 98, key = 1802, x = 2, Pid = 33, key = 1, x = 3, Pid = 58, key = 1, Pid = 69
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 1256, x = 1, Pid = 98, key = 1702, x = 2, Pid = 119, key = 1802, x = 3, Pid = 33, key = 1, x = 4, Pid = 58, key = 1, Pid = 69
+
+key = 878 inserted
+show leaf node after key insertion
+783 878 1147 
+
+key = 2934 inserted
+show data in the leaf node before split
+key = 2889 key = 2917 key = 2945 key = 2972 
+
+show data in the leaf node after split in page 1
+key = 2889 key = 2917 
+
+show data in the leaf node after split in page 2
+key = 2934 key = 2945 key = 2972 
+
+in leaf node feedbackTuple.newPid = 120
+insert pageNo = 120, key = 2934
+non-leaf node before insert, level = 1
+x = 0, Pid = 19, key = 2838, x = 1, Pid = 24, key = 2889, Pid = 50
+
+non-leaf node after insert
+x = 0, Pid = 19, key = 2838, x = 1, Pid = 24, key = 2889, x = 2, Pid = 50, key = 2934, Pid = 120
+
+key = 4780 inserted
+show data in the leaf node before split
+key = 4772 key = 4805 key = 4820 key = 4865 
+
+show data in the leaf node after split in page 1
+key = 4772 key = 4780 
+
+show data in the leaf node after split in page 2
+key = 4805 key = 4820 key = 4865 
+
+in leaf node feedbackTuple.newPid = 121
+insert pageNo = 121, key = 4805
+non-leaf node before insert, level = 1
+x = 0, Pid = 75, key = 4669, x = 1, Pid = 107, key = 4772, x = 2, Pid = 27, key = 4877, x = 3, Pid = 74, key = 4888, Pid = 118
+
+non-leaf node after insert
+x = 0, Pid = 75, key = 4669, x = 1, Pid = 107, key = 4772, x = 2, Pid = 27, key = 4805, x = 3, Pid = 121, key = 4877, x = 4, Pid = 74, key = 4888, Pid = 118
+
+key = 1574 inserted
+show leaf node after key insertion
+286 306 1472 1574 
+
+key = 3000 inserted
+show leaf node after key insertion
+2995 3000 3006 
+
+key = 1862 inserted
+show leaf node after key insertion
+1831 1843 1844 1862 
+
+key = 44 inserted
+show leaf node after key insertion
+44 62 83 129 
+
+key = 4307 inserted
+show data in the leaf node before split
+key = 4298 key = 4351 key = 4355 key = 4383 
+
+show data in the leaf node after split in page 1
+key = 4298 key = 4307 
+
+show data in the leaf node after split in page 2
+key = 4351 key = 4355 key = 4383 
+
+in leaf node feedbackTuple.newPid = 122
+insert pageNo = 122, key = 4351
+non-leaf node before insert, level = 1
+x = 0, Pid = 8, key = 4256, x = 1, Pid = 115, key = 4298, x = 2, Pid = 96, key = 4422, x = 3, Pid = 39, key = 4487, Pid = 89
+
+non-leaf node after insert
+x = 0, Pid = 8, key = 4256, x = 1, Pid = 115, key = 4298, x = 2, Pid = 96, key = 4351, x = 3, Pid = 122, key = 4422, x = 4, Pid = 39, key = 4487, Pid = 89
+
+key = 3773 inserted
+show leaf node after key insertion
+3725 3745 3773 3822 
+
+key = 3475 inserted
+show leaf node after key insertion
+3437 3446 3475 
+
+key = 524 inserted
+show data in the leaf node before split
+key = 517 key = 521 key = 538 key = 562 
+
+show data in the leaf node after split in page 1
+key = 517 key = 521 
+
+show data in the leaf node after split in page 2
+key = 524 key = 538 key = 562 
+
+in leaf node feedbackTuple.newPid = 123
+insert pageNo = 123, key = 524
+non-leaf node before insert, level = 1
+x = 0, Pid = 31, key = 380, x = 1, Pid = 82, key = 517, x = 2, Pid = 41, key = 622, Pid = 59
+
+non-leaf node after insert
+x = 0, Pid = 31, key = 380, x = 1, Pid = 82, key = 517, x = 2, Pid = 41, key = 524, x = 3, Pid = 123, key = 622, Pid = 59
+
+key = 865 inserted
+show leaf node after key insertion
+783 865 878 1147 
+
+key = 2343 inserted
+show data in the leaf node before split
+key = 2207 key = 2347 key = 2466 key = 2495 
+
+show data in the leaf node after split in page 1
+key = 2207 key = 2343 
+
+show data in the leaf node after split in page 2
+key = 2347 key = 2466 key = 2495 
+
+in leaf node feedbackTuple.newPid = 124
+insert pageNo = 124, key = 2347
+non-leaf node before insert, level = 1
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 2040, x = 2, Pid = 90, key = 2207, Pid = 105
+
+non-leaf node after insert
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 2040, x = 2, Pid = 90, key = 2207, x = 3, Pid = 105, key = 2347, Pid = 124
+
+key = 3458 inserted
+show leaf node after key insertion
+3437 3446 3458 3475 
+
+key = 4681 inserted
+show data in the leaf node before split
+key = 4669 key = 4699 key = 4740 key = 4758 
+
+show data in the leaf node after split in page 1
+key = 4669 key = 4681 
+
+show data in the leaf node after split in page 2
+key = 4699 key = 4740 key = 4758 
+
+in leaf node feedbackTuple.newPid = 125
+insert split pageNo = 125, key = 4699
+non-leaf node before insert split, level = 1
+x = 0, Pid = 75, key = 4669, x = 1, Pid = 107, key = 4772, x = 2, Pid = 27, key = 4805, x = 3, Pid = 121, key = 4877, x = 4, Pid = 74, key = 4888, Pid = 118
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 75, key = 4669, x = 1, Pid = 107, key = 4699, x = 2, Pid = 125, key = 4772, Pid = 27
+
+non-leaf node (new) after insert split
+x = 0, Pid = 121, key = 4877, x = 1, Pid = 74, key = 4888, Pid = 118
+in non-leaf node feedbackTuple.newPid = 126
+
+insert pageNo = 126, key = 4805
+non-leaf node before insert, level = 0
+x = 0, Pid = 28, key = 4541, x = 1, Pid = 113, key = 4641, Pid = 76
+
+non-leaf node after insert
+x = 0, Pid = 28, key = 4541, x = 1, Pid = 113, key = 4641, x = 2, Pid = 76, key = 4805, Pid = 126
+
+key = 2398 inserted
+show leaf node after key insertion
+2347 2398 2466 2495 
+
+key = 4961 inserted
+show leaf node after key insertion
+4888 4924 4961 4967 
+
+key = 3424 inserted
+show data in the leaf node before split
+key = 3390 key = 3404 key = 3413 key = 3427 
+
+show data in the leaf node after split in page 1
+key = 3390 key = 3404 
+
+show data in the leaf node after split in page 2
+key = 3413 key = 3424 key = 3427 
+
+in leaf node feedbackTuple.newPid = 127
+insert pageNo = 127, key = 3413
+non-leaf node before insert, level = 1
+x = 0, Pid = 71, key = 3390, x = 1, Pid = 7, key = 3437, x = 2, Pid = 29, key = 3497, Pid = 94
+
+non-leaf node after insert
+x = 0, Pid = 71, key = 3390, x = 1, Pid = 7, key = 3413, x = 2, Pid = 127, key = 3437, x = 3, Pid = 29, key = 3497, Pid = 94
+
+key = 2176 inserted
+show leaf node after key insertion
+2040 2170 2176 
+
+key = 4588 inserted
+show leaf node after key insertion
+4577 4585 4588 
+
+key = 1545 inserted
+show data in the leaf node before split
+key = 286 key = 306 key = 1472 key = 1574 
+
+show data in the leaf node after split in page 1
+key = 286 key = 306 
+
+show data in the leaf node after split in page 2
+key = 1472 key = 1545 key = 1574 
+
+in leaf node feedbackTuple.newPid = 128
+insert pageNo = 128, key = 1472
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 307, x = 1, Pid = 111, key = 1308, x = 2, Pid = 65, key = 1356, x = 3, Pid = 99, key = 1454, Pid = 17
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 307, x = 1, Pid = 111, key = 1308, x = 2, Pid = 65, key = 1356, x = 3, Pid = 99, key = 1454, x = 4, Pid = 17, key = 1472, Pid = 128
+
+key = 3038 inserted
+show leaf node after key insertion
+3015 3038 3110 3129 
+
+key = 2243 inserted
+show leaf node after key insertion
+2207 2243 2343 
+
+key = 3337 inserted
+show data in the leaf node before split
+key = 3294 key = 3335 key = 3347 key = 3364 
+
+show data in the leaf node after split in page 1
+key = 3294 key = 3335 
+
+show data in the leaf node after split in page 2
+key = 3337 key = 3347 key = 3364 
+
+in leaf node feedbackTuple.newPid = 129
+insert pageNo = 129, key = 3337
+non-leaf node before insert, level = 1
+x = 0, Pid = 71, key = 3390, x = 1, Pid = 7, key = 3413, x = 2, Pid = 127, key = 3437, x = 3, Pid = 29, key = 3497, Pid = 94
+
+non-leaf node after insert
+x = 0, Pid = 71, key = 3337, x = 1, Pid = 129, key = 3390, x = 2, Pid = 7, key = 3413, x = 3, Pid = 127, key = 3437, x = 4, Pid = 29, key = 3497, Pid = 94
+
+key = 819 inserted
+show data in the leaf node before split
+key = 783 key = 865 key = 878 key = 1147 
+
+show data in the leaf node after split in page 1
+key = 783 key = 819 
+
+show data in the leaf node after split in page 2
+key = 865 key = 878 key = 1147 
+
+in leaf node feedbackTuple.newPid = 130
+insert pageNo = 130, key = 865
+non-leaf node before insert, level = 1
+x = 0, Pid = 47, key = 1, x = 1, Pid = 34, key = 1468, x = 2, Pid = 110, key = 1595, Pid = 95
+
+non-leaf node after insert
+x = 0, Pid = 47, key = 1, x = 1, Pid = 34, key = 865, x = 2, Pid = 130, key = 1468, x = 3, Pid = 110, key = 1595, Pid = 95
+
+key = 2277 inserted
+show leaf node after key insertion
+2207 2243 2277 2343 
+
+key = 881 inserted
+show leaf node after key insertion
+865 878 881 1147 
+
+key = 1332 inserted
+show leaf node after key insertion
+1308 1329 1332 
+
+key = 2444 inserted
+show data in the leaf node before split
+key = 2347 key = 2398 key = 2466 key = 2495 
+
+show data in the leaf node after split in page 1
+key = 2347 key = 2398 
+
+show data in the leaf node after split in page 2
+key = 2444 key = 2466 key = 2495 
+
+in leaf node feedbackTuple.newPid = 131
+insert pageNo = 131, key = 2444
+non-leaf node before insert, level = 1
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 2040, x = 2, Pid = 90, key = 2207, x = 3, Pid = 105, key = 2347, Pid = 124
+
+non-leaf node after insert
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 2040, x = 2, Pid = 90, key = 2207, x = 3, Pid = 105, key = 2347, x = 4, Pid = 124, key = 2444, Pid = 131
+
+key = 3045 inserted
+show data in the leaf node before split
+key = 3015 key = 3038 key = 3110 key = 3129 
+
+show data in the leaf node after split in page 1
+key = 3015 key = 3038 
+
+show data in the leaf node after split in page 2
+key = 3045 key = 3110 key = 3129 
+
+in leaf node feedbackTuple.newPid = 132
+insert pageNo = 132, key = 3045
+non-leaf node before insert, level = 1
+x = 0, Pid = 5, key = 3015, x = 1, Pid = 49, key = 3131, x = 2, Pid = 72, key = 3255, Pid = 16
+
+non-leaf node after insert
+x = 0, Pid = 5, key = 3015, x = 1, Pid = 49, key = 3045, x = 2, Pid = 132, key = 3131, x = 3, Pid = 72, key = 3255, Pid = 16
+
+key = 4190 inserted
+show leaf node after key insertion
+4179 4190 4200 4213 
+
+key = 834 inserted
+show leaf node after key insertion
+783 819 834 
+
+key = 2932 inserted
+show leaf node after key insertion
+2889 2917 2932 
+
+key = 1887 inserted
+show leaf node after key insertion
+1870 1887 1897 
+
+key = 2290 inserted
+show data in the leaf node before split
+key = 2207 key = 2243 key = 2277 key = 2343 
+
+show data in the leaf node after split in page 1
+key = 2207 key = 2243 
+
+show data in the leaf node after split in page 2
+key = 2277 key = 2290 key = 2343 
+
+in leaf node feedbackTuple.newPid = 133
+insert split pageNo = 133, key = 2277
+non-leaf node before insert split, level = 1
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 2040, x = 2, Pid = 90, key = 2207, x = 3, Pid = 105, key = 2347, x = 4, Pid = 124, key = 2444, Pid = 131
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 2040, x = 2, Pid = 90, key = 2207, Pid = 105
+
+non-leaf node (new) after insert split
+x = 0, Pid = 133, key = 2347, x = 1, Pid = 124, key = 2444, Pid = 131
+in non-leaf node feedbackTuple.newPid = 134
+
+insert pageNo = 134, key = 2277
+non-leaf node before insert, level = 0
+x = 0, Pid = 91, key = 2500, x = 1, Pid = 43, key = 2751, Pid = 84
+
+non-leaf node after insert
+x = 0, Pid = 91, key = 2277, x = 1, Pid = 134, key = 2500, x = 2, Pid = 43, key = 2751, Pid = 84
+
+key = 4545 inserted
+show leaf node after key insertion
+4541 4542 4545 4564 
+
+key = 882 inserted
+show data in the leaf node before split
+key = 865 key = 878 key = 881 key = 1147 
+
+show data in the leaf node after split in page 1
+key = 865 key = 878 
+
+show data in the leaf node after split in page 2
+key = 881 key = 882 key = 1147 
+
+in leaf node feedbackTuple.newPid = 135
+insert pageNo = 135, key = 881
+non-leaf node before insert, level = 1
+x = 0, Pid = 47, key = 1, x = 1, Pid = 34, key = 865, x = 2, Pid = 130, key = 1468, x = 3, Pid = 110, key = 1595, Pid = 95
+
+non-leaf node after insert
+x = 0, Pid = 47, key = 1, x = 1, Pid = 34, key = 865, x = 2, Pid = 130, key = 881, x = 3, Pid = 135, key = 1468, x = 4, Pid = 110, key = 1595, Pid = 95
+
+key = 100 inserted
+show data in the leaf node before split
+key = 44 key = 62 key = 83 key = 129 
+
+show data in the leaf node after split in page 1
+key = 44 key = 62 
+
+show data in the leaf node after split in page 2
+key = 83 key = 100 key = 129 
+
+in leaf node feedbackTuple.newPid = 136
+insert split pageNo = 136, key = 83
+non-leaf node before insert split, level = 1
+x = 0, Pid = 44, key = 1, x = 1, Pid = 21, key = 1, x = 2, Pid = 26, key = 138, x = 3, Pid = 106, key = 237, x = 4, Pid = 85, key = 344, Pid = 64
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 44, key = 1, x = 1, Pid = 21, key = 1, x = 2, Pid = 26, key = 83, Pid = 136
+
+non-leaf node (new) after insert split
+x = 0, Pid = 106, key = 237, x = 1, Pid = 85, key = 344, Pid = 64
+in non-leaf node feedbackTuple.newPid = 137
+
+insert pageNo = 137, key = 138
+non-leaf node before insert, level = 0
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 1, x = 2, Pid = 52, key = 356, x = 3, Pid = 33, key = 667, Pid = 109
+
+non-leaf node after insert
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 1, x = 2, Pid = 52, key = 138, x = 3, Pid = 137, key = 356, x = 4, Pid = 33, key = 667, Pid = 109
+
+key = 2440 inserted
+show leaf node after key insertion
+2347 2398 2440 
+
+key = 4954 inserted
+show data in the leaf node before split
+key = 4888 key = 4924 key = 4961 key = 4967 
+
+show data in the leaf node after split in page 1
+key = 4888 key = 4924 
+
+show data in the leaf node after split in page 2
+key = 4954 key = 4961 key = 4967 
+
+in leaf node feedbackTuple.newPid = 138
+insert pageNo = 138, key = 4954
+non-leaf node before insert, level = 1
+x = 0, Pid = 121, key = 4877, x = 1, Pid = 74, key = 4888, Pid = 118
+
+non-leaf node after insert
+x = 0, Pid = 121, key = 4877, x = 1, Pid = 74, key = 4888, x = 2, Pid = 118, key = 4954, Pid = 138
+
+key = 2205 inserted
+show leaf node after key insertion
+2040 2170 2176 2205 
+
+key = 3829 inserted
+show data in the leaf node before split
+key = 3725 key = 3745 key = 3773 key = 3822 
+
+show data in the leaf node after split in page 1
+key = 3725 key = 3745 
+
+show data in the leaf node after split in page 2
+key = 3773 key = 3822 key = 3829 
+
+in leaf node feedbackTuple.newPid = 139
+insert pageNo = 139, key = 3773
+non-leaf node before insert, level = 1
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3665, x = 2, Pid = 79, key = 3725, Pid = 116
+
+non-leaf node after insert
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3665, x = 2, Pid = 79, key = 3725, x = 3, Pid = 116, key = 3773, Pid = 139
+
+key = 2551 inserted
+show data in the leaf node before split
+key = 2500 key = 2512 key = 2579 key = 2592 
+
+show data in the leaf node after split in page 1
+key = 2500 key = 2512 
+
+show data in the leaf node after split in page 2
+key = 2551 key = 2579 key = 2592 
+
+in leaf node feedbackTuple.newPid = 140
+insert pageNo = 140, key = 2551
+non-leaf node before insert, level = 1
+x = 0, Pid = 42, key = 2604, x = 1, Pid = 53, key = 2617, x = 2, Pid = 102, key = 2661, x = 3, Pid = 70, key = 2696, Pid = 83
+
+non-leaf node after insert
+x = 0, Pid = 42, key = 2551, x = 1, Pid = 140, key = 2604, x = 2, Pid = 53, key = 2617, x = 3, Pid = 102, key = 2661, x = 4, Pid = 70, key = 2696, Pid = 83
+
+key = 1344 inserted
+show leaf node after key insertion
+1308 1329 1332 1344 
+
+key = 1127 inserted
+show leaf node after key insertion
+881 882 1127 1147 
+
+key = 1523 inserted
+show leaf node after key insertion
+1472 1523 1545 1574 
+
+key = 3812 inserted
+show leaf node after key insertion
+3773 3812 3822 3829 
+
+key = 1974 inserted
+show leaf node after key insertion
+1925 1974 1976 2022 
+
+key = 3807 inserted
+show data in the leaf node before split
+key = 3773 key = 3812 key = 3822 key = 3829 
+
+show data in the leaf node after split in page 1
+key = 3773 key = 3807 
+
+show data in the leaf node after split in page 2
+key = 3812 key = 3822 key = 3829 
+
+in leaf node feedbackTuple.newPid = 141
+insert pageNo = 141, key = 3812
+non-leaf node before insert, level = 1
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3665, x = 2, Pid = 79, key = 3725, x = 3, Pid = 116, key = 3773, Pid = 139
+
+non-leaf node after insert
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3665, x = 2, Pid = 79, key = 3725, x = 3, Pid = 116, key = 3773, x = 4, Pid = 139, key = 3812, Pid = 141
+
+key = 3844 inserted
+show leaf node after key insertion
+3812 3822 3829 3844 
+
+key = 2612 inserted
+show leaf node after key insertion
+2604 2612 2613 
+
+key = 4349 inserted
+show leaf node after key insertion
+4298 4307 4349 
+
+key = 3410 inserted
+show leaf node after key insertion
+3390 3404 3410 
+
+key = 1601 inserted
+show data in the leaf node before split
+key = 1472 key = 1523 key = 1545 key = 1574 
+
+show data in the leaf node after split in page 1
+key = 1472 key = 1523 
+
+show data in the leaf node after split in page 2
+key = 1545 key = 1574 key = 1601 
+
+in leaf node feedbackTuple.newPid = 142
+insert split pageNo = 142, key = 1545
+non-leaf node before insert split, level = 1
+x = 0, Pid = 2, key = 307, x = 1, Pid = 111, key = 1308, x = 2, Pid = 65, key = 1356, x = 3, Pid = 99, key = 1454, x = 4, Pid = 17, key = 1472, Pid = 128
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 2, key = 307, x = 1, Pid = 111, key = 1308, x = 2, Pid = 65, key = 1356, Pid = 99
+
+non-leaf node (new) after insert split
+x = 0, Pid = 17, key = 1472, x = 1, Pid = 128, key = 1545, Pid = 142
+in non-leaf node feedbackTuple.newPid = 143
+
+insert pageNo = 143, key = 1454
+non-leaf node before insert, level = 0
+x = 0, Pid = 56, key = 1, x = 1, Pid = 78, key = 1, x = 2, Pid = 100, key = 1163, x = 3, Pid = 23, key = 1669, Pid = 63
+
+non-leaf node after insert
+x = 0, Pid = 56, key = 1, x = 1, Pid = 78, key = 1, x = 2, Pid = 100, key = 1163, x = 3, Pid = 23, key = 1454, x = 4, Pid = 143, key = 1669, Pid = 63
+
+key = 1686 inserted
+show leaf node after key insertion
+1256 1264 1686 
+
+key = 985 inserted
+show data in the leaf node before split
+key = 881 key = 882 key = 1127 key = 1147 
+
+show data in the leaf node after split in page 1
+key = 881 key = 882 
+
+show data in the leaf node after split in page 2
+key = 985 key = 1127 key = 1147 
+
+in leaf node feedbackTuple.newPid = 144
+insert split pageNo = 144, key = 985
+non-leaf node before insert split, level = 1
+x = 0, Pid = 47, key = 1, x = 1, Pid = 34, key = 865, x = 2, Pid = 130, key = 881, x = 3, Pid = 135, key = 1468, x = 4, Pid = 110, key = 1595, Pid = 95
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 47, key = 1, x = 1, Pid = 34, key = 865, x = 2, Pid = 130, key = 881, Pid = 135
+
+non-leaf node (new) after insert split
+x = 0, Pid = 144, key = 1468, x = 1, Pid = 110, key = 1595, Pid = 95
+in non-leaf node feedbackTuple.newPid = 145
+
+insert split pageNo = 145, key = 985
+non-leaf node before insert split, level = 0
+x = 0, Pid = 56, key = 1, x = 1, Pid = 78, key = 1, x = 2, Pid = 100, key = 1163, x = 3, Pid = 23, key = 1454, x = 4, Pid = 143, key = 1669, Pid = 63
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 56, key = 1, x = 1, Pid = 78, key = 1, x = 2, Pid = 100, key = 985, Pid = 145
+
+non-leaf node (new) after insert split
+x = 0, Pid = 23, key = 1454, x = 1, Pid = 143, key = 1669, Pid = 63
+in non-leaf node feedbackTuple.newPid = 146
+
+insert pageNo = 146, key = 1163
+non-leaf node before insert, level = 0
+x = 0, Pid = 11, key = 774, x = 1, Pid = 57, key = 1870, x = 2, Pid = 92, key = 2995, x = 3, Pid = 37, key = 4216, Pid = 114
+
+non-leaf node after insert
+x = 0, Pid = 11, key = 774, x = 1, Pid = 57, key = 1163, x = 2, Pid = 146, key = 1870, x = 3, Pid = 92, key = 2995, x = 4, Pid = 37, key = 4216, Pid = 114
+
+key = 4567 inserted
+show data in the leaf node before split
+key = 4541 key = 4542 key = 4545 key = 4564 
+
+show data in the leaf node after split in page 1
+key = 4541 key = 4542 
+
+show data in the leaf node after split in page 2
+key = 4545 key = 4564 key = 4567 
+
+in leaf node feedbackTuple.newPid = 147
+insert pageNo = 147, key = 4545
+non-leaf node before insert, level = 1
+x = 0, Pid = 12, key = 4577, x = 1, Pid = 61, key = 4621, Pid = 112
+
+non-leaf node after insert
+x = 0, Pid = 12, key = 4545, x = 1, Pid = 147, key = 4577, x = 2, Pid = 61, key = 4621, Pid = 112
+
+key = 1563 inserted
+show leaf node after key insertion
+1545 1563 1574 1601 
+
+key = 445 inserted
+show data in the leaf node before split
+key = 380 key = 424 key = 472 key = 485 
+
+show data in the leaf node after split in page 1
+key = 380 key = 424 
+
+show data in the leaf node after split in page 2
+key = 445 key = 472 key = 485 
+
+in leaf node feedbackTuple.newPid = 148
+insert pageNo = 148, key = 445
+non-leaf node before insert, level = 1
+x = 0, Pid = 31, key = 380, x = 1, Pid = 82, key = 517, x = 2, Pid = 41, key = 524, x = 3, Pid = 123, key = 622, Pid = 59
+
+non-leaf node after insert
+x = 0, Pid = 31, key = 380, x = 1, Pid = 82, key = 445, x = 2, Pid = 148, key = 517, x = 3, Pid = 41, key = 524, x = 4, Pid = 123, key = 622, Pid = 59
+
+key = 3755 inserted
+show leaf node after key insertion
+3725 3745 3755 
+
+key = 383 inserted
+show leaf node after key insertion
+380 383 424 
+
+key = 4206 inserted
+show data in the leaf node before split
+key = 4179 key = 4190 key = 4200 key = 4213 
+
+show data in the leaf node after split in page 1
+key = 4179 key = 4190 
+
+show data in the leaf node after split in page 2
+key = 4200 key = 4206 key = 4213 
+
+in leaf node feedbackTuple.newPid = 149
+insert split pageNo = 149, key = 4200
+non-leaf node before insert split, level = 1
+x = 0, Pid = 30, key = 4042, x = 1, Pid = 93, key = 4073, x = 2, Pid = 54, key = 4090, x = 3, Pid = 101, key = 4140, x = 4, Pid = 80, key = 4179, Pid = 104
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 30, key = 4042, x = 1, Pid = 93, key = 4073, x = 2, Pid = 54, key = 4090, Pid = 101
+
+non-leaf node (new) after insert split
+x = 0, Pid = 80, key = 4179, x = 1, Pid = 104, key = 4200, Pid = 149
+in non-leaf node feedbackTuple.newPid = 150
+
+insert pageNo = 150, key = 4140
+non-leaf node before insert, level = 0
+x = 0, Pid = 10, key = 3294, x = 1, Pid = 73, key = 3575, x = 2, Pid = 36, key = 3854, x = 3, Pid = 117, key = 3976, Pid = 81
+
+non-leaf node after insert
+x = 0, Pid = 10, key = 3294, x = 1, Pid = 73, key = 3575, x = 2, Pid = 36, key = 3854, x = 3, Pid = 117, key = 3976, x = 4, Pid = 81, key = 4140, Pid = 150
+
+key = 2137 inserted
+show data in the leaf node before split
+key = 2040 key = 2170 key = 2176 key = 2205 
+
+show data in the leaf node after split in page 1
+key = 2040 key = 2137 
+
+show data in the leaf node after split in page 2
+key = 2170 key = 2176 key = 2205 
+
+in leaf node feedbackTuple.newPid = 151
+insert pageNo = 151, key = 2170
+non-leaf node before insert, level = 1
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 2040, x = 2, Pid = 90, key = 2207, Pid = 105
+
+non-leaf node after insert
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 2040, x = 2, Pid = 90, key = 2170, x = 3, Pid = 151, key = 2207, Pid = 105
+
+key = 677 inserted
+show leaf node after key insertion
+667 674 677 684 
+
+key = 2729 inserted
+show leaf node after key insertion
+2696 2704 2729 2750 
+
+key = 3510 inserted
+show leaf node after key insertion
+3497 3510 3515 3524 
+
+key = 1304 inserted
+show data in the leaf node before split
+key = 307 key = 1243 key = 1471 key = 1667 
+
+show data in the leaf node after split in page 1
+key = 307 key = 1243 
+
+show data in the leaf node after split in page 2
+key = 1304 key = 1471 key = 1667 
+
+in leaf node feedbackTuple.newPid = 152
+insert pageNo = 152, key = 1304
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 307, x = 1, Pid = 111, key = 1308, x = 2, Pid = 65, key = 1356, Pid = 99
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 307, x = 1, Pid = 111, key = 1304, x = 2, Pid = 152, key = 1308, x = 3, Pid = 65, key = 1356, Pid = 99
+
+key = 182 inserted
+show data in the leaf node before split
+key = 138 key = 143 key = 210 key = 231 
+
+show data in the leaf node after split in page 1
+key = 138 key = 143 
+
+show data in the leaf node after split in page 2
+key = 182 key = 210 key = 231 
+
+in leaf node feedbackTuple.newPid = 153
+insert pageNo = 153, key = 182
+non-leaf node before insert, level = 1
+x = 0, Pid = 106, key = 237, x = 1, Pid = 85, key = 344, Pid = 64
+
+non-leaf node after insert
+x = 0, Pid = 106, key = 182, x = 1, Pid = 153, key = 237, x = 2, Pid = 85, key = 344, Pid = 64
+
+key = 3247 inserted
+show data in the leaf node before split
+key = 3131 key = 3132 key = 3171 key = 3243 
+
+show data in the leaf node after split in page 1
+key = 3131 key = 3132 
+
+show data in the leaf node after split in page 2
+key = 3171 key = 3243 key = 3247 
+
+in leaf node feedbackTuple.newPid = 154
+insert pageNo = 154, key = 3171
+non-leaf node before insert, level = 1
+x = 0, Pid = 5, key = 3015, x = 1, Pid = 49, key = 3045, x = 2, Pid = 132, key = 3131, x = 3, Pid = 72, key = 3255, Pid = 16
+
+non-leaf node after insert
+x = 0, Pid = 5, key = 3015, x = 1, Pid = 49, key = 3045, x = 2, Pid = 132, key = 3131, x = 3, Pid = 72, key = 3171, x = 4, Pid = 154, key = 3255, Pid = 16
+
+key = 3228 inserted
+show leaf node after key insertion
+3171 3228 3243 3247 
+
+key = 1295 inserted
+show leaf node after key insertion
+307 1243 1295 
+
+key = 342 inserted
+show leaf node after key insertion
+237 294 316 342 
+
+key = 858 inserted
+show leaf node after key insertion
+783 819 834 858 
+
+key = 4612 inserted
+show leaf node after key insertion
+4577 4585 4588 4612 
+
+key = 3860 inserted
+show leaf node after key insertion
+3854 3860 3877 3880 
+
+key = 1582 inserted
+show data in the leaf node before split
+key = 1545 key = 1563 key = 1574 key = 1601 
+
+show data in the leaf node after split in page 1
+key = 1545 key = 1563 
+
+show data in the leaf node after split in page 2
+key = 1574 key = 1582 key = 1601 
+
+in leaf node feedbackTuple.newPid = 155
+insert pageNo = 155, key = 1574
+non-leaf node before insert, level = 1
+x = 0, Pid = 17, key = 1472, x = 1, Pid = 128, key = 1545, Pid = 142
+
+non-leaf node after insert
+x = 0, Pid = 17, key = 1472, x = 1, Pid = 128, key = 1545, x = 2, Pid = 142, key = 1574, Pid = 155
+
+key = 2004 inserted
+show data in the leaf node before split
+key = 1925 key = 1974 key = 1976 key = 2022 
+
+show data in the leaf node after split in page 1
+key = 1925 key = 1974 
+
+show data in the leaf node after split in page 2
+key = 1976 key = 2004 key = 2022 
+
+in leaf node feedbackTuple.newPid = 156
+insert pageNo = 156, key = 1976
+non-leaf node before insert, level = 1
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 2040, x = 2, Pid = 90, key = 2170, x = 3, Pid = 151, key = 2207, Pid = 105
+
+non-leaf node after insert
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 1976, x = 2, Pid = 156, key = 2040, x = 3, Pid = 90, key = 2170, x = 4, Pid = 151, key = 2207, Pid = 105
+
+key = 4247 inserted
+show leaf node after key insertion
+4216 4222 4247 
+
+key = 884 inserted
+show leaf node after key insertion
+881 882 884 
+
+key = 4251 inserted
+show leaf node after key insertion
+4216 4222 4247 4251 
+
+key = 2490 inserted
+show leaf node after key insertion
+2444 2466 2490 2495 
+
+key = 2333 inserted
+show leaf node after key insertion
+2277 2290 2333 2343 
+
+key = 4837 inserted
+show leaf node after key insertion
+4805 4820 4837 4865 
+
+key = 3143 inserted
+show leaf node after key insertion
+3131 3132 3143 
+
+key = 122 inserted
+show leaf node after key insertion
+83 100 122 129 
+
+key = 4172 inserted
+show leaf node after key insertion
+4140 4170 4172 
+
+key = 937 inserted
+show leaf node after key insertion
+881 882 884 937 
+
+key = 3387 inserted
+show leaf node after key insertion
+3337 3347 3364 3387 
+
+key = 2068 inserted
+show leaf node after key insertion
+2040 2068 2137 
+
+key = 1349 inserted
+show data in the leaf node before split
+key = 1308 key = 1329 key = 1332 key = 1344 
+
+show data in the leaf node after split in page 1
+key = 1308 key = 1329 
+
+show data in the leaf node after split in page 2
+key = 1332 key = 1344 key = 1349 
+
+in leaf node feedbackTuple.newPid = 157
+insert pageNo = 157, key = 1332
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 307, x = 1, Pid = 111, key = 1304, x = 2, Pid = 152, key = 1308, x = 3, Pid = 65, key = 1356, Pid = 99
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 307, x = 1, Pid = 111, key = 1304, x = 2, Pid = 152, key = 1308, x = 3, Pid = 65, key = 1332, x = 4, Pid = 157, key = 1356, Pid = 99
+
+key = 3544 inserted
+show data in the leaf node before split
+key = 3497 key = 3510 key = 3515 key = 3524 
+
+show data in the leaf node after split in page 1
+key = 3497 key = 3510 
+
+show data in the leaf node after split in page 2
+key = 3515 key = 3524 key = 3544 
+
+in leaf node feedbackTuple.newPid = 158
+insert split pageNo = 158, key = 3515
+non-leaf node before insert split, level = 1
+x = 0, Pid = 71, key = 3337, x = 1, Pid = 129, key = 3390, x = 2, Pid = 7, key = 3413, x = 3, Pid = 127, key = 3437, x = 4, Pid = 29, key = 3497, Pid = 94
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 71, key = 3337, x = 1, Pid = 129, key = 3390, x = 2, Pid = 7, key = 3413, Pid = 127
+
+non-leaf node (new) after insert split
+x = 0, Pid = 29, key = 3497, x = 1, Pid = 94, key = 3515, Pid = 158
+in non-leaf node feedbackTuple.newPid = 159
+
+insert split pageNo = 159, key = 3437
+non-leaf node before insert split, level = 0
+x = 0, Pid = 10, key = 3294, x = 1, Pid = 73, key = 3575, x = 2, Pid = 36, key = 3854, x = 3, Pid = 117, key = 3976, x = 4, Pid = 81, key = 4140, Pid = 150
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 10, key = 3294, x = 1, Pid = 73, key = 3437, x = 2, Pid = 159, key = 3575, Pid = 36
+
+non-leaf node (new) after insert split
+x = 0, Pid = 117, key = 3976, x = 1, Pid = 81, key = 4140, Pid = 150
+in non-leaf node feedbackTuple.newPid = 160
+
+insert split pageNo = 160, key = 3854
+non-leaf node before insert split, level = 0
+x = 0, Pid = 11, key = 774, x = 1, Pid = 57, key = 1163, x = 2, Pid = 146, key = 1870, x = 3, Pid = 92, key = 2995, x = 4, Pid = 37, key = 4216, Pid = 114
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 11, key = 774, x = 1, Pid = 57, key = 1163, x = 2, Pid = 146, key = 1870, Pid = 92
+
+non-leaf node (new) after insert split
+x = 0, Pid = 37, key = 3854, x = 1, Pid = 160, key = 4216, Pid = 114
+in non-leaf node feedbackTuple.newPid = 161
+
+key = 773 inserted
+show leaf node after key insertion
+716 728 735 773 
+
+key = 1688 inserted
+show leaf node after key insertion
+1256 1264 1686 1688 
+
+key = 1820 inserted
+show data in the leaf node before split
+key = 1831 key = 1843 key = 1844 key = 1862 
+
+show data in the leaf node after split in page 1
+key = 1820 key = 1831 
+
+show data in the leaf node after split in page 2
+key = 1843 key = 1844 key = 1862 
+
+in leaf node feedbackTuple.newPid = 163
+insert split pageNo = 163, key = 1843
+non-leaf node before insert split, level = 1
+x = 0, Pid = 2, key = 1256, x = 1, Pid = 98, key = 1702, x = 2, Pid = 119, key = 1802, x = 3, Pid = 33, key = 1, x = 4, Pid = 58, key = 1, Pid = 69
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 2, key = 1256, x = 1, Pid = 98, key = 1702, x = 2, Pid = 119, key = 1802, Pid = 33
+
+non-leaf node (new) after insert split
+x = 0, Pid = 58, key = 1, x = 1, Pid = 69, key = 1843, Pid = 163
+in non-leaf node feedbackTuple.newPid = 164
+
+insert pageNo = 164, key = 1
+non-leaf node before insert, level = 0
+x = 0, Pid = 23, key = 1454, x = 1, Pid = 143, key = 1669, Pid = 63
+
+non-leaf node after insert
+x = 0, Pid = 23, key = 1, x = 1, Pid = 164, key = 1454, x = 2, Pid = 143, key = 1669, Pid = 63
+
+key = 298 inserted
+show data in the leaf node before split
+key = 237 key = 294 key = 316 key = 342 
+
+show data in the leaf node after split in page 1
+key = 237 key = 294 
+
+show data in the leaf node after split in page 2
+key = 298 key = 316 key = 342 
+
+in leaf node feedbackTuple.newPid = 165
+insert pageNo = 165, key = 298
+non-leaf node before insert, level = 1
+x = 0, Pid = 106, key = 182, x = 1, Pid = 153, key = 237, x = 2, Pid = 85, key = 344, Pid = 64
+
+non-leaf node after insert
+x = 0, Pid = 106, key = 182, x = 1, Pid = 153, key = 237, x = 2, Pid = 85, key = 298, x = 3, Pid = 165, key = 344, Pid = 64
+
+key = 46 inserted
+show leaf node after key insertion
+44 46 62 
+
+key = 3798 inserted
+show leaf node after key insertion
+3773 3798 3807 
+
+key = 3814 inserted
+show data in the leaf node before split
+key = 3812 key = 3822 key = 3829 key = 3844 
+
+show data in the leaf node after split in page 1
+key = 3812 key = 3814 
+
+show data in the leaf node after split in page 2
+key = 3822 key = 3829 key = 3844 
+
+in leaf node feedbackTuple.newPid = 166
+insert split pageNo = 166, key = 3822
+non-leaf node before insert split, level = 1
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3665, x = 2, Pid = 79, key = 3725, x = 3, Pid = 116, key = 3773, x = 4, Pid = 139, key = 3812, Pid = 141
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3665, x = 2, Pid = 79, key = 3725, Pid = 116
+
+non-leaf node (new) after insert split
+x = 0, Pid = 139, key = 3812, x = 1, Pid = 141, key = 3822, Pid = 166
+in non-leaf node feedbackTuple.newPid = 167
+
+insert pageNo = 167, key = 3773
+non-leaf node before insert, level = 0
+x = 0, Pid = 10, key = 3294, x = 1, Pid = 73, key = 3437, x = 2, Pid = 159, key = 3575, Pid = 36
+
+non-leaf node after insert
+x = 0, Pid = 10, key = 3294, x = 1, Pid = 73, key = 3437, x = 2, Pid = 159, key = 3575, x = 3, Pid = 36, key = 3773, Pid = 167
+
+key = 4273 inserted
+show leaf node after key insertion
+4256 4273 4280 4290 
+
+key = 1101 inserted
+show leaf node after key insertion
+985 1101 1127 1147 
+
+key = 1453 inserted
+show leaf node after key insertion
+1453 1820 1831 
+
+key = 1612 inserted
+show leaf node after key insertion
+1574 1582 1601 1612 
+
+key = 3588 inserted
+show leaf node after key insertion
+3575 3585 3588 3589 
+
+key = 3436 inserted
+show leaf node after key insertion
+3413 3424 3427 3436 
+
+key = 4684 inserted
+show leaf node after key insertion
+4669 4681 4684 
+
+key = 3121 inserted
+show leaf node after key insertion
+3045 3110 3121 3129 
+
+key = 3415 inserted
+show data in the leaf node before split
+key = 3413 key = 3424 key = 3427 key = 3436 
+
+show data in the leaf node after split in page 1
+key = 3413 key = 3415 
+
+show data in the leaf node after split in page 2
+key = 3424 key = 3427 key = 3436 
+
+in leaf node feedbackTuple.newPid = 168
+insert pageNo = 168, key = 3424
+non-leaf node before insert, level = 1
+x = 0, Pid = 71, key = 3337, x = 1, Pid = 129, key = 3390, x = 2, Pid = 7, key = 3413, Pid = 127
+
+non-leaf node after insert
+x = 0, Pid = 71, key = 3337, x = 1, Pid = 129, key = 3390, x = 2, Pid = 7, key = 3413, x = 3, Pid = 127, key = 3424, Pid = 168
+
+key = 999 inserted
+show data in the leaf node before split
+key = 985 key = 1101 key = 1127 key = 1147 
+
+show data in the leaf node after split in page 1
+key = 985 key = 999 
+
+show data in the leaf node after split in page 2
+key = 1101 key = 1127 key = 1147 
+
+in leaf node feedbackTuple.newPid = 169
+insert pageNo = 169, key = 1101
+non-leaf node before insert, level = 1
+x = 0, Pid = 144, key = 1468, x = 1, Pid = 110, key = 1595, Pid = 95
+
+non-leaf node after insert
+x = 0, Pid = 144, key = 1101, x = 1, Pid = 169, key = 1468, x = 2, Pid = 110, key = 1595, Pid = 95
+
+key = 2283 inserted
+show data in the leaf node before split
+key = 2277 key = 2290 key = 2333 key = 2343 
+
+show data in the leaf node after split in page 1
+key = 2277 key = 2283 
+
+show data in the leaf node after split in page 2
+key = 2290 key = 2333 key = 2343 
+
+in leaf node feedbackTuple.newPid = 170
+insert pageNo = 170, key = 2290
+non-leaf node before insert, level = 1
+x = 0, Pid = 133, key = 2347, x = 1, Pid = 124, key = 2444, Pid = 131
+
+non-leaf node after insert
+x = 0, Pid = 133, key = 2290, x = 1, Pid = 170, key = 2347, x = 2, Pid = 124, key = 2444, Pid = 131
+
+key = 2901 inserted
+show leaf node after key insertion
+2889 2901 2917 2932 
+
+key = 1490 inserted
+show leaf node after key insertion
+1472 1490 1523 
+
+key = 3160 inserted
+show leaf node after key insertion
+3131 3132 3143 3160 
+
+key = 3048 inserted
+show data in the leaf node before split
+key = 3045 key = 3110 key = 3121 key = 3129 
+
+show data in the leaf node after split in page 1
+key = 3045 key = 3048 
+
+show data in the leaf node after split in page 2
+key = 3110 key = 3121 key = 3129 
+
+in leaf node feedbackTuple.newPid = 171
+insert split pageNo = 171, key = 3110
+non-leaf node before insert split, level = 1
+x = 0, Pid = 5, key = 3015, x = 1, Pid = 49, key = 3045, x = 2, Pid = 132, key = 3131, x = 3, Pid = 72, key = 3171, x = 4, Pid = 154, key = 3255, Pid = 16
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 5, key = 3015, x = 1, Pid = 49, key = 3045, x = 2, Pid = 132, key = 3110, Pid = 171
+
+non-leaf node (new) after insert split
+x = 0, Pid = 72, key = 3171, x = 1, Pid = 154, key = 3255, Pid = 16
+in non-leaf node feedbackTuple.newPid = 172
+
+insert pageNo = 172, key = 3131
+non-leaf node before insert, level = 0
+x = 0, Pid = 10, key = 3294, x = 1, Pid = 73, key = 3437, x = 2, Pid = 159, key = 3575, x = 3, Pid = 36, key = 3773, Pid = 167
+
+non-leaf node after insert
+x = 0, Pid = 10, key = 3131, x = 1, Pid = 172, key = 3294, x = 2, Pid = 73, key = 3437, x = 3, Pid = 159, key = 3575, x = 4, Pid = 36, key = 3773, Pid = 167
+
+key = 3535 inserted
+show leaf node after key insertion
+3515 3524 3535 3544 
+
+key = 3959 inserted
+show leaf node after key insertion
+3928 3930 3959 3968 
+
+key = 3303 inserted
+show leaf node after key insertion
+3294 3303 3335 
+
+key = 2235 inserted
+show leaf node after key insertion
+2207 2235 2243 
+
+key = 2083 inserted
+show leaf node after key insertion
+2040 2068 2083 2137 
+
+key = 1093 inserted
+show leaf node after key insertion
+985 999 1093 
+
+key = 2842 inserted
+show leaf node after key insertion
+2838 2842 2855 2859 
+
+key = 1598 inserted
+show data in the leaf node before split
+key = 1574 key = 1582 key = 1601 key = 1612 
+
+show data in the leaf node after split in page 1
+key = 1574 key = 1582 
+
+show data in the leaf node after split in page 2
+key = 1598 key = 1601 key = 1612 
+
+in leaf node feedbackTuple.newPid = 173
+insert pageNo = 173, key = 1598
+non-leaf node before insert, level = 1
+x = 0, Pid = 17, key = 1472, x = 1, Pid = 128, key = 1545, x = 2, Pid = 142, key = 1574, Pid = 155
+
+non-leaf node after insert
+x = 0, Pid = 17, key = 1472, x = 1, Pid = 128, key = 1545, x = 2, Pid = 142, key = 1574, x = 3, Pid = 155, key = 1598, Pid = 173
+
+key = 1027 inserted
+show leaf node after key insertion
+985 999 1027 1093 
+
+key = 3477 inserted
+show data in the leaf node before split
+key = 3437 key = 3446 key = 3458 key = 3475 
+
+show data in the leaf node after split in page 1
+key = 3437 key = 3446 
+
+show data in the leaf node after split in page 2
+key = 3458 key = 3475 key = 3477 
+
+in leaf node feedbackTuple.newPid = 174
+insert pageNo = 174, key = 3458
+non-leaf node before insert, level = 1
+x = 0, Pid = 29, key = 3497, x = 1, Pid = 94, key = 3515, Pid = 158
+
+non-leaf node after insert
+x = 0, Pid = 29, key = 3458, x = 1, Pid = 174, key = 3497, x = 2, Pid = 94, key = 3515, Pid = 158
+
+key = 1568 inserted
+show leaf node after key insertion
+1545 1563 1568 
+
+key = 3626 inserted
+show leaf node after key insertion
+3590 3597 3626 3653 
+
+key = 2902 inserted
+show data in the leaf node before split
+key = 2889 key = 2901 key = 2917 key = 2932 
+
+show data in the leaf node after split in page 1
+key = 2889 key = 2901 
+
+show data in the leaf node after split in page 2
+key = 2902 key = 2917 key = 2932 
+
+in leaf node feedbackTuple.newPid = 175
+insert pageNo = 175, key = 2902
+non-leaf node before insert, level = 1
+x = 0, Pid = 19, key = 2838, x = 1, Pid = 24, key = 2889, x = 2, Pid = 50, key = 2934, Pid = 120
+
+non-leaf node after insert
+x = 0, Pid = 19, key = 2838, x = 1, Pid = 24, key = 2889, x = 2, Pid = 50, key = 2902, x = 3, Pid = 175, key = 2934, Pid = 120
+
+key = 4716 inserted
+show leaf node after key insertion
+4699 4716 4740 4758 
+
+key = 4472 inserted
+show leaf node after key insertion
+4422 4452 4472 
+
+key = 112 inserted
+show data in the leaf node before split
+key = 83 key = 100 key = 122 key = 129 
+
+show data in the leaf node after split in page 1
+key = 83 key = 100 
+
+show data in the leaf node after split in page 2
+key = 112 key = 122 key = 129 
+
+in leaf node feedbackTuple.newPid = 176
+insert pageNo = 176, key = 112
+non-leaf node before insert, level = 1
+x = 0, Pid = 44, key = 1, x = 1, Pid = 21, key = 1, x = 2, Pid = 26, key = 83, Pid = 136
+
+non-leaf node after insert
+x = 0, Pid = 44, key = 1, x = 1, Pid = 21, key = 1, x = 2, Pid = 26, key = 83, x = 3, Pid = 136, key = 112, Pid = 176
+
+key = 3746 inserted
+show leaf node after key insertion
+3725 3745 3746 3755 
+
+key = 1200 inserted
+show leaf node after key insertion
+1200 1453 1820 1831 
+
+key = 1503 inserted
+show leaf node after key insertion
+1472 1490 1503 1523 
+
+key = 2340 inserted
+show leaf node after key insertion
+2290 2333 2340 2343 
+
+key = 3707 inserted
+show leaf node after key insertion
+3665 3707 3717 
+
+key = 1928 inserted
+show leaf node after key insertion
+1925 1928 1974 
+
+key = 1717 inserted
+show leaf node after key insertion
+1702 1716 1717 1743 
+
+key = 3970 inserted
+show data in the leaf node before split
+key = 3928 key = 3930 key = 3959 key = 3968 
+
+show data in the leaf node after split in page 1
+key = 3928 key = 3930 
+
+show data in the leaf node after split in page 2
+key = 3959 key = 3968 key = 3970 
+
+in leaf node feedbackTuple.newPid = 177
+insert pageNo = 177, key = 3959
+non-leaf node before insert, level = 1
+x = 0, Pid = 103, key = 3903, x = 1, Pid = 46, key = 3928, Pid = 97
+
+non-leaf node after insert
+x = 0, Pid = 103, key = 3903, x = 1, Pid = 46, key = 3928, x = 2, Pid = 97, key = 3959, Pid = 177
+
+key = 3931 inserted
+show leaf node after key insertion
+3928 3930 3931 
+
+key = 1098 inserted
+show data in the leaf node before split
+key = 985 key = 999 key = 1027 key = 1093 
+
+show data in the leaf node after split in page 1
+key = 985 key = 999 
+
+show data in the leaf node after split in page 2
+key = 1027 key = 1093 key = 1098 
+
+in leaf node feedbackTuple.newPid = 178
+insert pageNo = 178, key = 1027
+non-leaf node before insert, level = 1
+x = 0, Pid = 144, key = 1101, x = 1, Pid = 169, key = 1468, x = 2, Pid = 110, key = 1595, Pid = 95
+
+non-leaf node after insert
+x = 0, Pid = 144, key = 1027, x = 1, Pid = 178, key = 1101, x = 2, Pid = 169, key = 1468, x = 3, Pid = 110, key = 1595, Pid = 95
+
+key = 3008 inserted
+show leaf node after key insertion
+2995 3000 3006 3008 
+
+key = 2070 inserted
+show data in the leaf node before split
+key = 2040 key = 2068 key = 2083 key = 2137 
+
+show data in the leaf node after split in page 1
+key = 2040 key = 2068 
+
+show data in the leaf node after split in page 2
+key = 2070 key = 2083 key = 2137 
+
+in leaf node feedbackTuple.newPid = 179
+insert split pageNo = 179, key = 2070
+non-leaf node before insert split, level = 1
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 1976, x = 2, Pid = 156, key = 2040, x = 3, Pid = 90, key = 2170, x = 4, Pid = 151, key = 2207, Pid = 105
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 1976, x = 2, Pid = 156, key = 2040, Pid = 90
+
+non-leaf node (new) after insert split
+x = 0, Pid = 179, key = 2170, x = 1, Pid = 151, key = 2207, Pid = 105
+in non-leaf node feedbackTuple.newPid = 180
+
+insert pageNo = 180, key = 2070
+non-leaf node before insert, level = 0
+x = 0, Pid = 91, key = 2277, x = 1, Pid = 134, key = 2500, x = 2, Pid = 43, key = 2751, Pid = 84
+
+non-leaf node after insert
+x = 0, Pid = 91, key = 2070, x = 1, Pid = 180, key = 2277, x = 2, Pid = 134, key = 2500, x = 3, Pid = 43, key = 2751, Pid = 84
+
+key = 3297 inserted
+show leaf node after key insertion
+3294 3297 3303 3335 
+
+key = 1977 inserted
+show leaf node after key insertion
+1976 1977 2004 2022 
+
+key = 163 inserted
+show leaf node after key insertion
+138 143 163 
+
+key = 3183 inserted
+show data in the leaf node before split
+key = 3171 key = 3228 key = 3243 key = 3247 
+
+show data in the leaf node after split in page 1
+key = 3171 key = 3183 
+
+show data in the leaf node after split in page 2
+key = 3228 key = 3243 key = 3247 
+
+in leaf node feedbackTuple.newPid = 181
+insert pageNo = 181, key = 3228
+non-leaf node before insert, level = 1
+x = 0, Pid = 72, key = 3171, x = 1, Pid = 154, key = 3255, Pid = 16
+
+non-leaf node after insert
+x = 0, Pid = 72, key = 3171, x = 1, Pid = 154, key = 3228, x = 2, Pid = 181, key = 3255, Pid = 16
+
+key = 1663 inserted
+show leaf node after key insertion
+1598 1601 1612 1663 
+
+key = 2297 inserted
+show data in the leaf node before split
+key = 2290 key = 2333 key = 2340 key = 2343 
+
+show data in the leaf node after split in page 1
+key = 2290 key = 2297 
+
+show data in the leaf node after split in page 2
+key = 2333 key = 2340 key = 2343 
+
+in leaf node feedbackTuple.newPid = 182
+insert pageNo = 182, key = 2333
+non-leaf node before insert, level = 1
+x = 0, Pid = 133, key = 2290, x = 1, Pid = 170, key = 2347, x = 2, Pid = 124, key = 2444, Pid = 131
+
+non-leaf node after insert
+x = 0, Pid = 133, key = 2290, x = 1, Pid = 170, key = 2333, x = 2, Pid = 182, key = 2347, x = 3, Pid = 124, key = 2444, Pid = 131
+
+key = 2795 inserted
+show leaf node after key insertion
+2751 2795 2809 2817 
+
+key = 4993 inserted
+show leaf node after key insertion
+4954 4961 4967 4993 
+
+key = 2824 inserted
+show data in the leaf node before split
+key = 2751 key = 2795 key = 2809 key = 2817 
+
+show data in the leaf node after split in page 1
+key = 2751 key = 2795 
+
+show data in the leaf node after split in page 2
+key = 2809 key = 2817 key = 2824 
+
+in leaf node feedbackTuple.newPid = 183
+insert pageNo = 183, key = 2809
+non-leaf node before insert, level = 1
+x = 0, Pid = 19, key = 2838, x = 1, Pid = 24, key = 2889, x = 2, Pid = 50, key = 2902, x = 3, Pid = 175, key = 2934, Pid = 120
+
+non-leaf node after insert
+x = 0, Pid = 19, key = 2809, x = 1, Pid = 183, key = 2838, x = 2, Pid = 24, key = 2889, x = 3, Pid = 50, key = 2902, x = 4, Pid = 175, key = 2934, Pid = 120
+
+key = 1927 inserted
+show leaf node after key insertion
+1925 1927 1928 1974 
+
+key = 3850 inserted
+show leaf node after key insertion
+3822 3829 3844 3850 
+
+key = 526 inserted
+show leaf node after key insertion
+524 526 538 562 
+
+key = 1761 inserted
+show data in the leaf node before split
+key = 1702 key = 1716 key = 1717 key = 1743 
+
+show data in the leaf node after split in page 1
+key = 1702 key = 1716 
+
+show data in the leaf node after split in page 2
+key = 1717 key = 1743 key = 1761 
+
+in leaf node feedbackTuple.newPid = 184
+insert pageNo = 184, key = 1717
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 1256, x = 1, Pid = 98, key = 1702, x = 2, Pid = 119, key = 1802, Pid = 33
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 1256, x = 1, Pid = 98, key = 1702, x = 2, Pid = 119, key = 1717, x = 3, Pid = 184, key = 1802, Pid = 33
+
+key = 2420 inserted
+show leaf node after key insertion
+2347 2398 2420 2440 
+
+key = 4217 inserted
+show data in the leaf node before split
+key = 4216 key = 4222 key = 4247 key = 4251 
+
+show data in the leaf node after split in page 1
+key = 4216 key = 4217 
+
+show data in the leaf node after split in page 2
+key = 4222 key = 4247 key = 4251 
+
+in leaf node feedbackTuple.newPid = 185
+insert split pageNo = 185, key = 4222
+non-leaf node before insert split, level = 1
+x = 0, Pid = 8, key = 4256, x = 1, Pid = 115, key = 4298, x = 2, Pid = 96, key = 4351, x = 3, Pid = 122, key = 4422, x = 4, Pid = 39, key = 4487, Pid = 89
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 3, key = 4251, x = 1, Pid = 43, key = 1, x = 2, Pid = 115, key = 1, Pid = 96
+
+non-leaf node (new) after insert split
+x = 0, Pid = 122, key = 1, x = 1, Pid = 39, key = 1, Pid = 89
+in non-leaf node feedbackTuple.newPid = 186
+
+insert pageNo = 186, key = 1
+non-leaf node before insert, level = 0
+x = 0, Pid = 28, key = 4541, x = 1, Pid = 113, key = 4641, x = 2, Pid = 76, key = 4805, Pid = 126
+
+non-leaf node after insert
+x = 0, Pid = 28, key = 1, x = 1, Pid = 186, key = 4541, x = 2, Pid = 113, key = 4641, x = 3, Pid = 76, key = 4805, Pid = 126
+
+key = 1782 inserted
+show leaf node after key insertion
+1717 1743 1761 1782 
+
+key = 4416 inserted
+show data in the leaf node before split
+key = 4487 key = 4517 key = 4519 key = 4524 
+
+show data in the leaf node after split in page 1
+key = 4416 key = 4487 
+
+show data in the leaf node after split in page 2
+key = 4517 key = 4519 key = 4524 
+
+in leaf node feedbackTuple.newPid = 187
+insert pageNo = 187, key = 4517
+non-leaf node before insert, level = 1
+x = 0, Pid = 122, key = 1, x = 1, Pid = 39, key = 1, Pid = 89
+
+non-leaf node after insert
+x = 0, Pid = 122, key = 1, x = 1, Pid = 39, key = 1, x = 2, Pid = 89, key = 4517, Pid = 187
+
+key = 4874 inserted
+show data in the leaf node before split
+key = 4805 key = 4820 key = 4837 key = 4865 
+
+show data in the leaf node after split in page 1
+key = 4805 key = 4820 
+
+show data in the leaf node after split in page 2
+key = 4837 key = 4865 key = 4874 
+
+in leaf node feedbackTuple.newPid = 188
+insert pageNo = 188, key = 4837
+non-leaf node before insert, level = 1
+x = 0, Pid = 121, key = 4877, x = 1, Pid = 74, key = 4888, x = 2, Pid = 118, key = 4954, Pid = 138
+
+non-leaf node after insert
+x = 0, Pid = 121, key = 4837, x = 1, Pid = 188, key = 4877, x = 2, Pid = 74, key = 4888, x = 3, Pid = 118, key = 4954, Pid = 138
+
+key = 2065 inserted
+show leaf node after key insertion
+2040 2065 2068 
+
+key = 553 inserted
+show data in the leaf node before split
+key = 524 key = 526 key = 538 key = 562 
+
+show data in the leaf node after split in page 1
+key = 524 key = 526 
+
+show data in the leaf node after split in page 2
+key = 538 key = 553 key = 562 
+
+in leaf node feedbackTuple.newPid = 189
+insert split pageNo = 189, key = 538
+non-leaf node before insert split, level = 1
+x = 0, Pid = 31, key = 380, x = 1, Pid = 82, key = 445, x = 2, Pid = 148, key = 517, x = 3, Pid = 41, key = 524, x = 4, Pid = 123, key = 622, Pid = 59
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 31, key = 380, x = 1, Pid = 82, key = 445, x = 2, Pid = 148, key = 517, Pid = 41
+
+non-leaf node (new) after insert split
+x = 0, Pid = 123, key = 538, x = 1, Pid = 189, key = 622, Pid = 59
+in non-leaf node feedbackTuple.newPid = 190
+
+insert split pageNo = 190, key = 524
+non-leaf node before insert split, level = 0
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 1, x = 2, Pid = 52, key = 138, x = 3, Pid = 137, key = 356, x = 4, Pid = 33, key = 667, Pid = 109
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 4, key = 1, x = 1, Pid = 18, key = 1, x = 2, Pid = 52, key = 138, Pid = 137
+
+non-leaf node (new) after insert split
+x = 0, Pid = 33, key = 524, x = 1, Pid = 190, key = 667, Pid = 109
+in non-leaf node feedbackTuple.newPid = 191
+
+insert pageNo = 191, key = 356
+non-leaf node before insert, level = 0
+x = 0, Pid = 11, key = 774, x = 1, Pid = 57, key = 1163, x = 2, Pid = 146, key = 1870, Pid = 92
+
+non-leaf node after insert
+x = 0, Pid = 11, key = 356, x = 1, Pid = 191, key = 774, x = 2, Pid = 57, key = 1163, x = 3, Pid = 146, key = 1870, Pid = 92
+
+key = 2820 inserted
+show leaf node after key insertion
+2809 2817 2820 2824 
+
+key = 447 inserted
+show leaf node after key insertion
+445 447 472 485 
+
+key = 3811 inserted
+show leaf node after key insertion
+3773 3798 3807 3811 
+
+key = 4233 inserted
+show leaf node after key insertion
+4233 4416 4487 
+
+key = 382 inserted
+show leaf node after key insertion
+380 382 383 424 
+
+key = 4054 inserted
+show leaf node after key insertion
+4042 4048 4054 4070 
+
+key = 3075 inserted
+show leaf node after key insertion
+3045 3048 3075 
+
+key = 1640 inserted
+show data in the leaf node before split
+key = 1598 key = 1601 key = 1612 key = 1663 
+
+show data in the leaf node after split in page 1
+key = 1598 key = 1601 
+
+show data in the leaf node after split in page 2
+key = 1612 key = 1640 key = 1663 
+
+in leaf node feedbackTuple.newPid = 192
+insert pageNo = 192, key = 1612
+non-leaf node before insert, level = 1
+x = 0, Pid = 17, key = 1472, x = 1, Pid = 128, key = 1545, x = 2, Pid = 142, key = 1574, x = 3, Pid = 155, key = 1598, Pid = 173
+
+non-leaf node after insert
+x = 0, Pid = 17, key = 1472, x = 1, Pid = 128, key = 1545, x = 2, Pid = 142, key = 1574, x = 3, Pid = 155, key = 1598, x = 4, Pid = 173, key = 1612, Pid = 192
+
+key = 76 inserted
+show leaf node after key insertion
+44 46 62 76 
+
+key = 4403 inserted
+show leaf node after key insertion
+4233 4403 4416 4487 
+
+key = 2009 inserted
+show data in the leaf node before split
+key = 1976 key = 1977 key = 2004 key = 2022 
+
+show data in the leaf node after split in page 1
+key = 1976 key = 1977 
+
+show data in the leaf node after split in page 2
+key = 2004 key = 2009 key = 2022 
+
+in leaf node feedbackTuple.newPid = 193
+insert pageNo = 193, key = 2004
+non-leaf node before insert, level = 1
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 1976, x = 2, Pid = 156, key = 2040, Pid = 90
+
+non-leaf node after insert
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 1976, x = 2, Pid = 156, key = 2004, x = 3, Pid = 193, key = 2040, Pid = 90
+
+key = 3609 inserted
+show data in the leaf node before split
+key = 3590 key = 3597 key = 3626 key = 3653 
+
+show data in the leaf node after split in page 1
+key = 3590 key = 3597 
+
+show data in the leaf node after split in page 2
+key = 3609 key = 3626 key = 3653 
+
+in leaf node feedbackTuple.newPid = 194
+insert pageNo = 194, key = 3609
+non-leaf node before insert, level = 1
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3665, x = 2, Pid = 79, key = 3725, Pid = 116
+
+non-leaf node after insert
+x = 0, Pid = 35, key = 3590, x = 1, Pid = 13, key = 3609, x = 2, Pid = 194, key = 3665, x = 3, Pid = 79, key = 3725, Pid = 116
+
+key = 2421 inserted
+show data in the leaf node before split
+key = 2347 key = 2398 key = 2420 key = 2440 
+
+show data in the leaf node after split in page 1
+key = 2347 key = 2398 
+
+show data in the leaf node after split in page 2
+key = 2420 key = 2421 key = 2440 
+
+in leaf node feedbackTuple.newPid = 195
+insert pageNo = 195, key = 2420
+non-leaf node before insert, level = 1
+x = 0, Pid = 133, key = 2290, x = 1, Pid = 170, key = 2333, x = 2, Pid = 182, key = 2347, x = 3, Pid = 124, key = 2444, Pid = 131
+
+non-leaf node after insert
+x = 0, Pid = 133, key = 2290, x = 1, Pid = 170, key = 2333, x = 2, Pid = 182, key = 2347, x = 3, Pid = 124, key = 2420, x = 4, Pid = 195, key = 2444, Pid = 131
+
+key = 556 inserted
+show leaf node after key insertion
+538 553 556 562 
+
+key = 1037 inserted
+show leaf node after key insertion
+1027 1037 1093 1098 
+
+key = 1004 inserted
+show leaf node after key insertion
+985 999 1004 
+
+key = 2058 inserted
+show leaf node after key insertion
+2040 2058 2065 2068 
+
+key = 1444 inserted
+show data in the leaf node before split
+key = 1200 key = 1453 key = 1820 key = 1831 
+
+show data in the leaf node after split in page 1
+key = 1200 key = 1444 
+
+show data in the leaf node after split in page 2
+key = 1453 key = 1820 key = 1831 
+
+in leaf node feedbackTuple.newPid = 196
+insert pageNo = 196, key = 1453
+non-leaf node before insert, level = 1
+x = 0, Pid = 58, key = 1, x = 1, Pid = 69, key = 1843, Pid = 163
+
+non-leaf node after insert
+x = 0, Pid = 58, key = 1, x = 1, Pid = 69, key = 1453, x = 2, Pid = 196, key = 1843, Pid = 163
+
+key = 4935 inserted
+show leaf node after key insertion
+4888 4924 4935 
+
+key = 1916 inserted
+show leaf node after key insertion
+1870 1887 1897 1916 
+
+key = 1548 inserted
+show leaf node after key insertion
+1545 1548 1563 1568 
+
+key = 842 inserted
+show data in the leaf node before split
+key = 783 key = 819 key = 834 key = 858 
+
+show data in the leaf node after split in page 1
+key = 783 key = 819 
+
+show data in the leaf node after split in page 2
+key = 834 key = 842 key = 858 
+
+in leaf node feedbackTuple.newPid = 197
+insert pageNo = 197, key = 834
+non-leaf node before insert, level = 1
+x = 0, Pid = 47, key = 1, x = 1, Pid = 34, key = 865, x = 2, Pid = 130, key = 881, Pid = 135
+
+non-leaf node after insert
+x = 0, Pid = 47, key = 1, x = 1, Pid = 34, key = 834, x = 2, Pid = 197, key = 865, x = 3, Pid = 130, key = 881, Pid = 135
+
+key = 2789 inserted
+show leaf node after key insertion
+2751 2789 2795 
+
+key = 2406 inserted
+show leaf node after key insertion
+2347 2398 2406 
+
+key = 2684 inserted
+show leaf node after key insertion
+2661 2684 2685 
+
+key = 2354 inserted
+show leaf node after key insertion
+2347 2354 2398 2406 
+
+key = 573 inserted
+show data in the leaf node before split
+key = 538 key = 553 key = 556 key = 562 
+
+show data in the leaf node after split in page 1
+key = 538 key = 553 
+
+show data in the leaf node after split in page 2
+key = 556 key = 562 key = 573 
+
+in leaf node feedbackTuple.newPid = 198
+insert pageNo = 198, key = 556
+non-leaf node before insert, level = 1
+x = 0, Pid = 123, key = 538, x = 1, Pid = 189, key = 622, Pid = 59
+
+non-leaf node after insert
+x = 0, Pid = 123, key = 538, x = 1, Pid = 189, key = 556, x = 2, Pid = 198, key = 622, Pid = 59
+
+key = 2733 inserted
+show data in the leaf node before split
+key = 2696 key = 2704 key = 2729 key = 2750 
+
+show data in the leaf node after split in page 1
+key = 2696 key = 2704 
+
+show data in the leaf node after split in page 2
+key = 2729 key = 2733 key = 2750 
+
+in leaf node feedbackTuple.newPid = 199
+insert split pageNo = 199, key = 2729
+non-leaf node before insert split, level = 1
+x = 0, Pid = 42, key = 2551, x = 1, Pid = 140, key = 2604, x = 2, Pid = 53, key = 2617, x = 3, Pid = 102, key = 2661, x = 4, Pid = 70, key = 2696, Pid = 83
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 42, key = 2551, x = 1, Pid = 140, key = 2604, x = 2, Pid = 53, key = 2617, Pid = 102
+
+non-leaf node (new) after insert split
+x = 0, Pid = 70, key = 2696, x = 1, Pid = 83, key = 2729, Pid = 199
+in non-leaf node feedbackTuple.newPid = 200
+
+insert pageNo = 200, key = 2661
+non-leaf node before insert, level = 0
+x = 0, Pid = 91, key = 2070, x = 1, Pid = 180, key = 2277, x = 2, Pid = 134, key = 2500, x = 3, Pid = 43, key = 2751, Pid = 84
+
+non-leaf node after insert
+x = 0, Pid = 91, key = 2070, x = 1, Pid = 180, key = 2277, x = 2, Pid = 134, key = 2500, x = 3, Pid = 43, key = 2661, x = 4, Pid = 200, key = 2751, Pid = 84
+
+key = 2143 inserted
+show leaf node after key insertion
+2070 2083 2137 2143 
+
+key = 2799 inserted
+show leaf node after key insertion
+2751 2789 2795 2799 
+
+key = 3960 inserted
+show leaf node after key insertion
+3959 3960 3968 3970 
+
+key = 1632 inserted
+show leaf node after key insertion
+1612 1632 1640 1663 
+
+key = 2700 inserted
+show leaf node after key insertion
+2696 2700 2704 
+
+key = 760 inserted
+show data in the leaf node before split
+key = 716 key = 728 key = 735 key = 773 
+
+show data in the leaf node after split in page 1
+key = 716 key = 728 
+
+show data in the leaf node after split in page 2
+key = 735 key = 760 key = 773 
+
+in leaf node feedbackTuple.newPid = 201
+insert pageNo = 201, key = 735
+non-leaf node before insert, level = 1
+x = 0, Pid = 108, key = 697, x = 1, Pid = 20, key = 716, Pid = 48
+
+non-leaf node after insert
+x = 0, Pid = 108, key = 697, x = 1, Pid = 20, key = 716, x = 2, Pid = 48, key = 735, Pid = 201
+
+key = 845 inserted
+show leaf node after key insertion
+834 842 845 858 
+
+key = 2141 inserted
+show data in the leaf node before split
+key = 2070 key = 2083 key = 2137 key = 2143 
+
+show data in the leaf node after split in page 1
+key = 2070 key = 2083 
+
+show data in the leaf node after split in page 2
+key = 2137 key = 2141 key = 2143 
+
+in leaf node feedbackTuple.newPid = 202
+insert pageNo = 202, key = 2137
+non-leaf node before insert, level = 1
+x = 0, Pid = 179, key = 2170, x = 1, Pid = 151, key = 2207, Pid = 105
+
+non-leaf node after insert
+x = 0, Pid = 179, key = 2137, x = 1, Pid = 202, key = 2170, x = 2, Pid = 151, key = 2207, Pid = 105
+
+key = 4601 inserted
+show data in the leaf node before split
+key = 4577 key = 4585 key = 4588 key = 4612 
+
+show data in the leaf node after split in page 1
+key = 4577 key = 4585 
+
+show data in the leaf node after split in page 2
+key = 4588 key = 4601 key = 4612 
+
+in leaf node feedbackTuple.newPid = 203
+insert pageNo = 203, key = 4588
+non-leaf node before insert, level = 1
+x = 0, Pid = 12, key = 4545, x = 1, Pid = 147, key = 4577, x = 2, Pid = 61, key = 4621, Pid = 112
+
+non-leaf node after insert
+x = 0, Pid = 12, key = 4545, x = 1, Pid = 147, key = 4577, x = 2, Pid = 61, key = 4588, x = 3, Pid = 203, key = 4621, Pid = 112
+
+key = 4471 inserted
+show data in the leaf node before split
+key = 4233 key = 4403 key = 4416 key = 4487 
+
+show data in the leaf node after split in page 1
+key = 4233 key = 4403 
+
+show data in the leaf node after split in page 2
+key = 4416 key = 4471 key = 4487 
+
+in leaf node feedbackTuple.newPid = 204
+insert pageNo = 204, key = 4416
+non-leaf node before insert, level = 1
+x = 0, Pid = 122, key = 1, x = 1, Pid = 39, key = 1, x = 2, Pid = 89, key = 4517, Pid = 187
+
+non-leaf node after insert
+x = 0, Pid = 122, key = 1, x = 1, Pid = 39, key = 1, x = 2, Pid = 89, key = 4416, x = 3, Pid = 204, key = 4517, Pid = 187
+
+key = 2146 inserted
+show leaf node after key insertion
+2137 2141 2143 2146 
+
+key = 381 inserted
+show data in the leaf node before split
+key = 380 key = 382 key = 383 key = 424 
+
+show data in the leaf node after split in page 1
+key = 380 key = 381 
+
+show data in the leaf node after split in page 2
+key = 382 key = 383 key = 424 
+
+in leaf node feedbackTuple.newPid = 205
+insert pageNo = 205, key = 382
+non-leaf node before insert, level = 1
+x = 0, Pid = 31, key = 380, x = 1, Pid = 82, key = 445, x = 2, Pid = 148, key = 517, Pid = 41
+
+non-leaf node after insert
+x = 0, Pid = 31, key = 380, x = 1, Pid = 82, key = 382, x = 2, Pid = 205, key = 445, x = 3, Pid = 148, key = 517, Pid = 41
+
+key = 4652 inserted
+show leaf node after key insertion
+4641 4652 4667 
+
+key = 1739 inserted
+show data in the leaf node before split
+key = 1717 key = 1743 key = 1761 key = 1782 
+
+show data in the leaf node after split in page 1
+key = 1717 key = 1739 
+
+show data in the leaf node after split in page 2
+key = 1743 key = 1761 key = 1782 
+
+in leaf node feedbackTuple.newPid = 206
+insert pageNo = 206, key = 1743
+non-leaf node before insert, level = 1
+x = 0, Pid = 2, key = 1256, x = 1, Pid = 98, key = 1702, x = 2, Pid = 119, key = 1717, x = 3, Pid = 184, key = 1802, Pid = 33
+
+non-leaf node after insert
+x = 0, Pid = 2, key = 1256, x = 1, Pid = 98, key = 1702, x = 2, Pid = 119, key = 1717, x = 3, Pid = 184, key = 1743, x = 4, Pid = 206, key = 1802, Pid = 33
+
+key = 1906 inserted
+show data in the leaf node before split
+key = 1870 key = 1887 key = 1897 key = 1916 
+
+show data in the leaf node after split in page 1
+key = 1870 key = 1887 
+
+show data in the leaf node after split in page 2
+key = 1897 key = 1906 key = 1916 
+
+in leaf node feedbackTuple.newPid = 207
+insert pageNo = 207, key = 1897
+non-leaf node before insert, level = 1
+x = 0, Pid = 86, key = 1925, x = 1, Pid = 88, key = 1976, x = 2, Pid = 156, key = 2004, x = 3, Pid = 193, key = 2040, Pid = 90
+
+non-leaf node after insert
+x = 0, Pid = 86, key = 1897, x = 1, Pid = 207, key = 1925, x = 2, Pid = 88, key = 1976, x = 3, Pid = 156, key = 2004, x = 4, Pid = 193, key = 2040, Pid = 90
+
+key = 1035 inserted
+show data in the leaf node before split
+key = 1027 key = 1037 key = 1093 key = 1098 
+
+show data in the leaf node after split in page 1
+key = 1027 key = 1035 
+
+show data in the leaf node after split in page 2
+key = 1037 key = 1093 key = 1098 
+
+in leaf node feedbackTuple.newPid = 208
+insert pageNo = 208, key = 1037
+non-leaf node before insert, level = 1
+x = 0, Pid = 144, key = 1027, x = 1, Pid = 178, key = 1101, x = 2, Pid = 169, key = 1468, x = 3, Pid = 110, key = 1595, Pid = 95
+
+non-leaf node after insert
+x = 0, Pid = 144, key = 1027, x = 1, Pid = 178, key = 1037, x = 2, Pid = 208, key = 1101, x = 3, Pid = 169, key = 1468, x = 4, Pid = 110, key = 1595, Pid = 95
+
+key = 4613 inserted
+show leaf node after key insertion
+4588 4601 4612 4613 
+
+key = 280 inserted
+show leaf node after key insertion
+237 280 294 
+
+key = 3359 inserted
+show data in the leaf node before split
+key = 3337 key = 3347 key = 3364 key = 3387 
+
+show data in the leaf node after split in page 1
+key = 3337 key = 3347 
+
+show data in the leaf node after split in page 2
+key = 3359 key = 3364 key = 3387 
+
+in leaf node feedbackTuple.newPid = 209
+insert pageNo = 209, key = 3359
+non-leaf node before insert, level = 1
+x = 0, Pid = 71, key = 3337, x = 1, Pid = 129, key = 3390, x = 2, Pid = 7, key = 3413, x = 3, Pid = 127, key = 3424, Pid = 168
+
+non-leaf node after insert
+x = 0, Pid = 71, key = 3337, x = 1, Pid = 129, key = 3359, x = 2, Pid = 209, key = 3390, x = 3, Pid = 7, key = 3413, x = 4, Pid = 127, key = 3424, Pid = 168
+
+key = 3043 inserted
+show leaf node after key insertion
+3015 3038 3043 
+
+key = 2539 inserted
+show leaf node after key insertion
+2500 2512 2539 
+
+key = 653 inserted
+show leaf node after key insertion
+622 626 653 
+
+key = 738 inserted
+show leaf node after key insertion
+735 738 760 773 
+
+key = 3295 inserted
+show data in the leaf node before split
+key = 3294 key = 3297 key = 3303 key = 3335 
+
+show data in the leaf node after split in page 1
+key = 3294 key = 3295 
+
+show data in the leaf node after split in page 2
+key = 3297 key = 3303 key = 3335 
+
+in leaf node feedbackTuple.newPid = 210
+insert split pageNo = 210, key = 3297
+non-leaf node before insert split, level = 1
+x = 0, Pid = 71, key = 3337, x = 1, Pid = 129, key = 3359, x = 2, Pid = 209, key = 3390, x = 3, Pid = 7, key = 3413, x = 4, Pid = 127, key = 3424, Pid = 168
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 5, key = 3335, x = 1, Pid = 28, key = 1, x = 2, Pid = 129, key = 1, Pid = 209
+
+non-leaf node (new) after insert split
+x = 0, Pid = 7, key = 1, x = 1, Pid = 127, key = 1, Pid = 168
+in non-leaf node feedbackTuple.newPid = 211
+
+insert split pageNo = 211, key = 1
+non-leaf node before insert split, level = 0
+x = 0, Pid = 10, key = 3131, x = 1, Pid = 172, key = 3294, x = 2, Pid = 73, key = 3437, x = 3, Pid = 159, key = 3575, x = 4, Pid = 36, key = 3773, Pid = 167
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 3554295824, key = 10875984, x = 1, Pid = 32684, key = 1, x = 2, Pid = 172, key = 1, Pid = 73
+
+non-leaf node (new) after insert split
+x = 0, Pid = 159, key = 1, x = 1, Pid = 36, key = 1, Pid = 167
+in non-leaf node feedbackTuple.newPid = 212
+
+insert pageNo = 212, key = 1
+non-leaf node before insert, level = 0
+x = 0, Pid = 37, key = 3854, x = 1, Pid = 160, key = 4216, Pid = 114
+
+non-leaf node after insert
+x = 0, Pid = 37, key = 1, x = 1, Pid = 212, key = 3854, x = 2, Pid = 160, key = 4216, Pid = 114
+
+key = 736 inserted
+show data in the leaf node before split
+key = 735 key = 738 key = 760 key = 773 
+
+show data in the leaf node after split in page 1
+key = 735 key = 736 
+
+show data in the leaf node after split in page 2
+key = 738 key = 760 key = 773 
+
+in leaf node feedbackTuple.newPid = 213
+insert pageNo = 213, key = 738
+non-leaf node before insert, level = 1
+x = 0, Pid = 108, key = 697, x = 1, Pid = 20, key = 716, x = 2, Pid = 48, key = 735, Pid = 201
+
+non-leaf node after insert
+x = 0, Pid = 108, key = 697, x = 1, Pid = 20, key = 716, x = 2, Pid = 48, key = 735, x = 3, Pid = 201, key = 738, Pid = 213
+
+key = 3937 inserted
+show leaf node after key insertion
+3928 3930 3931 3937 
+
+key = 2316 inserted
+show leaf node after key insertion
+2290 2297 2316 
+
+key = 1168 inserted
+show leaf node after key insertion
+1168 1200 1444 
+
+key = 3168 inserted
+show data in the leaf node before split
+key = 3773 key = 3798 key = 3807 key = 3811 
+
+show data in the leaf node after split in page 1
+key = 3168 key = 3773 
+
+show data in the leaf node after split in page 2
+key = 3798 key = 3807 key = 3811 
+
+in leaf node feedbackTuple.newPid = 214
+insert pageNo = 214, key = 3798
+non-leaf node before insert, level = 1
+x = 0, Pid = 139, key = 3812, x = 1, Pid = 141, key = 3822, Pid = 166
+
+non-leaf node after insert
+x = 0, Pid = 139, key = 3798, x = 1, Pid = 214, key = 3812, x = 2, Pid = 141, key = 3822, Pid = 166
+
+key = 889 inserted
+show data in the leaf node before split
+key = 881 key = 882 key = 884 key = 937 
+
+show data in the leaf node after split in page 1
+key = 881 key = 882 
+
+show data in the leaf node after split in page 2
+key = 884 key = 889 key = 937 
+
+in leaf node feedbackTuple.newPid = 215
+insert pageNo = 215, key = 884
+non-leaf node before insert, level = 1
+x = 0, Pid = 47, key = 1, x = 1, Pid = 34, key = 834, x = 2, Pid = 197, key = 865, x = 3, Pid = 130, key = 881, Pid = 135
+
+non-leaf node after insert
+x = 0, Pid = 47, key = 1, x = 1, Pid = 34, key = 834, x = 2, Pid = 197, key = 865, x = 3, Pid = 130, key = 881, x = 4, Pid = 135, key = 884, Pid = 215
+
+key = 2064 inserted
+show data in the leaf node before split
+key = 2040 key = 2058 key = 2065 key = 2068 
+
+show data in the leaf node after split in page 1
+key = 2040 key = 2058 
+
+show data in the leaf node after split in page 2
+key = 2064 key = 2065 key = 2068 
+
+in leaf node feedbackTuple.newPid = 216
+insert split pageNo = 216, key = 2064
+non-leaf node before insert split, level = 1
+x = 0, Pid = 86, key = 1897, x = 1, Pid = 207, key = 1925, x = 2, Pid = 88, key = 1976, x = 3, Pid = 156, key = 2004, x = 4, Pid = 193, key = 2040, Pid = 90
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 86, key = 1897, x = 1, Pid = 207, key = 1925, x = 2, Pid = 88, key = 1976, Pid = 156
+
+non-leaf node (new) after insert split
+x = 0, Pid = 193, key = 2040, x = 1, Pid = 90, key = 2064, Pid = 216
+in non-leaf node feedbackTuple.newPid = 217
+
+insert split pageNo = 217, key = 2004
+non-leaf node before insert split, level = 0
+x = 0, Pid = 91, key = 2070, x = 1, Pid = 180, key = 2277, x = 2, Pid = 134, key = 2500, x = 3, Pid = 43, key = 2661, x = 4, Pid = 200, key = 2751, Pid = 84
+
+non-leaf node (ori) after insert split
+x = 0, Pid = 3554091024, key = 10875984, x = 1, Pid = 32684, key = 1, x = 2, Pid = 180, key = 1, Pid = 134
+
+non-leaf node (new) after insert split
+x = 0, Pid = 43, key = 1, x = 1, Pid = 200, key = 1, Pid = 84
+in non-leaf node feedbackTuple.newPid = 218
+
+insert pageNo = 218, key = 1
+non-leaf node before insert, level = 0
+x = 0, Pid = 11, key = 356, x = 1, Pid = 191, key = 774, x = 2, Pid = 57, key = 1163, x = 3, Pid = 146, key = 1870, Pid = 92
+
+non-leaf node after insert
+x = 0, Pid = 11, key = 1, x = 1, Pid = 218, key = 356, x = 2, Pid = 191, key = 774, x = 3, Pid = 57, key = 1163, x = 4, Pid = 146, key = 1870, Pid = 92
+
+key = 3885 inserted
+show data in the leaf node before split
+key = 3854 key = 3860 key = 3877 key = 3880 
+
+show data in the leaf node after split in page 1
+key = 3854 key = 3860 
+
+show data in the leaf node after split in page 2
+key = 3877 key = 3880 key = 3885 
+
+in leaf node feedbackTuple.newPid = 219
+insert pageNo = 219, key = 3877
+non-leaf node before insert, level = 1
+x = 0, Pid = 103, key = 3903, x = 1, Pid = 46, key = 3928, x = 2, Pid = 97, key = 3959, Pid = 177
+
+non-leaf node after insert
+x = 0, Pid = 103, key = 3877, x = 1, Pid = 219, key = 3903, x = 2, Pid = 46, key = 3928, x = 3, Pid = 97, key = 3959, Pid = 177
+
+headerPageNum = 1
+rootPageNum = 162
+pid = 3554091024
