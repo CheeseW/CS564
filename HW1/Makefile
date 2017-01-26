@@ -12,5 +12,9 @@ all: wl
 wl: wl.cpp wl.h
 	$(CXX) $(CXXFLAGS) wl.cpp -o $@
 
+# for testing purpose
+test: test.cpp wl.cpp wl.h
+	$(CXX) $(CXXFLAGS) test.cpp -o $@
+
 clean:
 	rm -f core *.o wl
