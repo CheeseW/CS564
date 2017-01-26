@@ -18,13 +18,13 @@
 #include "wl.h"
 
 
-int main()
-{
-    std::string s = "Danm it!!";
-    TreeNode root(s, 5);
-    std::cout<<root.getWord()<<std::endl;
-    return 0;
-}
+// int main()
+// {
+//     std::string s = "Danm it!!";
+//     TreeNode root(s, 5);
+//     std::cout<<root.getWord()<<std::endl;
+//     return 0;
+// }
 
 LinkedNode::LinkedNode(int pos):
     pos(pos),
@@ -36,6 +36,7 @@ TreeNode::TreeNode(std::string word, int pos):
     right(NULL),
     word(word)
     {
+        std::cout<<"constructing node"<<std::endl;
         this->pos.append(pos);
     }
 
@@ -139,8 +140,7 @@ void BTree::destroyTree(TreeNode* node)
 
 int TreeNode::locate(int occur)
 {
-    //TODO
-    return 0;
+    return pos.get(occur-1);
 }
 
 LinkedList::~LinkedList()
@@ -159,14 +159,17 @@ void LinkedList::append(int n)
         head = new LinkedNode(n);
         tail = head;
     }
+    ++l;
 }
 
 /*
- * Return NULL if idx is out of range
- * Also notice that the index start from 0
+ * Doesn't do range check (as of now), need to make sure that the access index
+ * is IN RANGE!
+ * Return -1 if out of range
  */
-LinkedNode* LinkedList::get(int idx) const
+int LinkedList::get(int idx) const
 {
+    // TODO: add exception for out of range indexing
     LinkedNode *pt = head;
     for (int i = 0; i < idx; ++i)
     {
@@ -175,18 +178,17 @@ LinkedNode* LinkedList::get(int idx) const
             pt = pt->next;
         } else
         {
-            return NULL;
+            return -1;
         };
     }
-    return pt;
-    // if (pt)
-    // {
-    //     return pt->pos;
-    // } else
-    // {
-    //     return NULL;
-    // }
 
+    if (pt)
+    {
+        return pt->pos;
+    } else
+    {
+        return -1;
+    }
 }
 
 void LinkedList::clear()
@@ -199,8 +201,49 @@ void LinkedList::clear()
     }
 }
 
-
-void testing()
+bool TreeNode::contains(int pos) const
 {
-    //TOOD
+    return this->pos.length() >= pos;
+}
+
+int LinkedList::length() const
+{
+    return l;
+}
+
+void BTree::print() const
+{
+    if (root)
+    {
+         print(root);
+     } else
+    {
+        std::cout<<"The tree is empty";
+    }
+    std::cout<<std::endl;
+
+}
+
+void BTree::print(TreeNode *node) const
+{
+    std::cout<<node->word;
+       std::cout<<"(";
+
+    if (node->left)
+    {
+         print(node->left);
+     } else
+    {
+        std::cout<<".";
+    }
+
+    if (node->right)
+    {
+         print(node->right);
+     } else
+    {
+        std::cout<<".";
+    }
+       std::cout<<")";
+
 }

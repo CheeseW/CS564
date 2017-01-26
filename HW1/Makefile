@@ -14,7 +14,7 @@ wl: wl.cpp wl.h
 
 # for testing purpose
 test: test.cpp wl.cpp wl.h
-	$(CXX) $(CXXFLAGS) test.cpp -o $@
+	$(CXX) $(CXXFLAGS) test.cpp wl.cpp -o $@
 
 clean:
 	rm -f core *.o wl
