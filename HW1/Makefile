@@ -2,16 +2,15 @@
 # Requires that the object definitions be in wl.h and wl.cpp
 
 CXX = g++
-CXXFLAGS =  -O2 -g -Wall
+#CXXFLAGS =  -O2 -g -Wall
 
 # During debugging you may want to used the compiler flags listed below
-#CXXFLAGS =      -g -Wall
+CXXFLAGS =      -g -Wall
 
 all: wl
 
-wl: wl.cpp 
+wl: wl.cpp wl.h
 	$(CXX) $(CXXFLAGS) wl.cpp -o $@
 
 clean:
-	rm -f core *.o wl 
-
+	rm -f core *.o wl
