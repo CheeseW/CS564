@@ -78,6 +78,7 @@ private:
     void print(TreeNode *node) const;
 };
 
-
-void testing();                 /* TODO: remove this method when submit */
+void consoleApp();
+void parser(BTree &tree, std::string fileName);
+bool validChar(char c);
 #endif

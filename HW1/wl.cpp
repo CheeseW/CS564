@@ -14,9 +14,10 @@
  * @file wl.cpp
  * @author Qisi Wang
  */
-
 #include "wl.h"
 
+#include <fstream>
+#include <cstdlib>
 
 // int main()
 // {
@@ -25,6 +26,11 @@
 //     std::cout<<root.getWord()<<std::endl;
 //     return 0;
 // }
+
+void consoleApp()
+{
+    //TODO:
+}
 
 LinkedNode::LinkedNode(int pos):
     pos(pos),
@@ -36,7 +42,7 @@ TreeNode::TreeNode(std::string word, int pos):
     right(NULL),
     word(word)
     {
-        std::cout<<"constructing node"<<std::endl;
+        // std::cout<<"constructing node"<<std::endl;
         this->pos.append(pos);
     }
 
@@ -246,4 +252,102 @@ void BTree::print(TreeNode *node) const
     }
        std::cout<<")";
 
+}
+
+void parser(BTree &tree, std::string fileName)
+{
+    // std::string s("sixpence.txt");
+    std::ifstream inf(fileName.c_str());
+
+    std::ofstream outf("test_result.txt");
+
+
+    if (!inf)
+    {
+        std::cerr<<"File test_result.txt could not be opened!"<<std::endl;
+        exit(1);
+    }
+    char* buffer = new char[256]; // may use precessor constant for the length
+    int length = 256;
+    // use 2 pointers to indicating read extend
+    int ptrs = 0;
+    int ptre = ptrs;
+    int count = 0;          // word count
+    while(inf)
+    {
+        // read in to buffer
+        inf.read(buffer+ptrs, length-ptrs);
+        std::cout << "Reading " << length-ptrs << " characters." <<std::endl;
+
+        if (!inf)
+        {
+            length = inf.gcount();
+        }
+
+        bool reachEnd = false;
+
+        ptrs = 0;
+        ptre = ptrs;
+        // Read one word from the buffer
+        while (!reachEnd){
+            ptrs = ptre;
+
+            while(!validChar(buffer[ptrs]))
+            {
+                ++ptrs;
+                if (ptre >= length)
+                {
+                    reachEnd = true;
+                }
+            }
+            if (!reachEnd)
+            {
+                ptre = ptrs;
+                while(validChar(buffer[ptre]))
+                {
+                    ++ptre;
+                    if (ptre >= length)
+                    {
+                        reachEnd = true;
+                    }
+                }
+                if (reachEnd)
+                {
+                    // if there is still word at the end of the buffer, copy it to the beginning of the buffer
+                    ptre = ptrs;
+                    ptrs = 0;
+                    while (ptre < length)
+                    {
+                        buffer[ptrs] = buffer[ptre];
+                        ++ptrs;
+                        ++ptre;
+                    }
+                }else
+                {
+                    buffer[ptre] = '\0';    // Mark the end of the word
+                    ++ count;
+                    tree.insert(std::string(buffer+ptrs), count);
+                        //outf <<"    "<<std::string(buffer+ptrs) <<std::endl;
+                }
+            }
+
+        }
+
+
+
+    }
+    if (ptrs > 0)
+    {
+        buffer[ptrs] = '\0';
+        ++count;
+        tree.insert(std::string(buffer), count);
+    }
+    inf.close();
+    delete[] buffer;
+}
+
+
+bool validChar(char c)
+{
+    return (c<='z' && c >= 'a') || (c<='Z' && c >= 'A') || (c<='9' && c >= '0') || (c == '\'');
 }
